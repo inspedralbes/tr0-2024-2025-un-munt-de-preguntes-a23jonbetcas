@@ -1,0 +1,170 @@
+{
+    "preguntes": [
+      {
+        "id": 1,
+        "pregunta": "Quina marca de cotxes utilitza el lema 'Ultimate Driving Machine'?",
+        "respostes": [
+          {"id": 1, "resposta": "BMW", "correcta": true},
+          {"id": 2, "resposta": "Mercedes-Benz", "correcta": false},
+          {"id": 3, "resposta": "Audi", "correcta": false},
+          {"id": 4, "resposta": "Lexus", "correcta": false}
+        ],
+        "imatge": "https://exemple.com/bmw.jpg"
+      },
+      {
+        "id": 2,
+        "pregunta": "Quina és la capital de França?",
+        "respostes": [
+          {"id": 1, "resposta": "París", "correcta": true},
+          {"id": 2, "resposta": "Londres", "correcta": false},
+          {"id": 3, "resposta": "Berlín", "correcta": false},
+          {"id": 4, "resposta": "Madrid", "correcta": false}
+        ],
+        "imatge": "https://exemple.com/paris.jpg"
+      },
+      {
+        "id": 3,
+        "pregunta": "Quin és el planeta més gran del sistema solar?",
+        "respostes": [
+          {"id": 1, "resposta": "Júpiter", "correcta": true},
+          {"id": 2, "resposta": "Saturn", "correcta": false},
+          {"id": 3, "resposta": "Terra", "correcta": false},
+          {"id": 4, "resposta": "Marte", "correcta": false}
+        ],
+        "imatge": "https://exemple.com/jupiter.jpg"
+      },
+      {
+        "id": 4,
+        "pregunta": "Quin és l'element químic amb el símbol 'O'?",
+        "respostes": [
+          {"id": 1, "resposta": "Oxigen", "correcta": true},
+          {"id": 2, "resposta": "Osmosi", "correcta": false},
+          {"id": 3, "resposta": "Oli", "correcta": false},
+          {"id": 4, "resposta": "Oro", "correcta": false}
+        ],
+        "imatge": "https://exemple.com/oxigen.jpg"
+      },
+      {
+        "id": 5,
+        "pregunta": "Quin continent és conegut com el 'continent negre'?",
+        "respostes": [
+          {"id": 1, "resposta": "Àfrica", "correcta": true},
+          {"id": 2, "resposta": "Àsia", "correcta": false},
+          {"id": 3, "resposta": "Europa", "correcta": false},
+          {"id": 4, "resposta": "Amèrica del Sud", "correcta": false}
+        ],
+        "imatge": "https://exemple.com/africa.jpg"
+      },
+      {
+        "id": 6,
+        "pregunta": "Qui va escriure 'Don Quijote de la Mancha'?",
+        "respostes": [
+          {"id": 1, "resposta": "Miguel de Cervantes", "correcta": true},
+          {"id": 2, "resposta": "Gabriel García Márquez", "correcta": false},
+          {"id": 3, "resposta": "Pablo Neruda", "correcta": false},
+          {"id": 4, "resposta": "Jorge Luis Borges", "correcta": false}
+        ],
+        "imatge": "https://exemple.com/cervantes.jpg"
+      },
+      {
+        "id": 7,
+        "pregunta": "Quin és el sistema operatiu de codi obert més popular?",
+        "respostes": [
+          {"id": 1, "resposta": "Linux", "correcta": true},
+          {"id": 2, "resposta": "Windows", "correcta": false},
+          {"id": 3, "resposta": "MacOS", "correcta": false},
+          {"id": 4, "resposta": "iOS", "correcta": false}
+        ],
+        "imatge": "https://exemple.com/linux.jpg"
+      },
+      {
+        "id": 8,
+        "pregunta": "Quin animal és conegut com el 'rei de la selva'?",
+        "respostes": [
+          {"id": 1, "resposta": "Lion", "correcta": true},
+          {"id": 2, "resposta": "Tigre", "correcta": false},
+          {"id": 3, "resposta": "Elefant", "correcta": false},
+          {"id": 4, "resposta": "Giraffe", "correcta": false}
+        ],
+        "imatge": "https://exemple.com/lion.jpg"
+      },
+      {
+        "id": 9,
+        "pregunta": "Quina és la moneda oficial del Japó?",
+        "respostes": [
+          {"id": 1, "resposta": "Ien", "correcta": true},
+          {"id": 2, "resposta": "Dòlar", "correcta": false},
+          {"id": 3, "resposta": "Euro", "correcta": false},
+          {"id": 4, "resposta": "Pound", "correcta": false}
+        ],
+        "imatge": "https://exemple.com/ien.jpg"
+      },
+      {
+        "id": 10,
+        "pregunta": "Quina és la capital d'Austràlia?",
+        "respostes": [
+          {"id": 1, "resposta": "Canberra", "correcta": true},
+          {"id": 2, "resposta": "Sydney", "correcta": false},
+          {"id": 3, "resposta": "Melbourne", "correcta": false},
+          {"id": 4, "resposta": "Brisbane", "correcta": false}
+        ],
+        "imatge": "https://exemple.com/canberra.jpg"
+      },
+      {
+        "id": 11,
+        "pregunta": "Quin és el major oceà del món?",
+        "respostes": [
+          {"id": 1, "resposta": "Oceà Pacífic", "correcta": true},
+          {"id": 2, "resposta": "Oceà Atlàntic", "correcta": false},
+          {"id": 3, "resposta": "Oceà Índic", "correcta": false},
+          {"id": 4, "resposta": "Oceà Àrtic", "correcta": false}
+        ],
+        "imatge": "https://exemple.com/ocean.jpg"
+      },
+      {
+        "id": 12,
+        "pregunta": "Quin gas és essencial per a la respiració humana?",
+        "respostes": [
+          {"id": 1, "resposta": "Oxigen", "correcta": true},
+          {"id": 2, "resposta": "Diòxid de carboni", "correcta": false},
+          {"id": 3, "resposta": "Nitrogen", "correcta": false},
+          {"id": 4, "resposta": "Heli", "correcta": false}
+        ],
+        "imatge": "https://exemple.com/oxigen.jpg"
+      },
+      {
+        "id": 13,
+        "pregunta": "Quin instrument musical té cordes i es toca amb un arc?",
+        "respostes": [
+          {"id": 1, "resposta": "Violí", "correcta": true},
+          {"id": 2, "resposta": "Piano", "correcta": false},
+          {"id": 3, "resposta": "Bateria", "correcta": false},
+          {"id": 4, "resposta": "Guitarra", "correcta": false}
+        ],
+        "imatge": "https://exemple.com/violin.jpg"
+      },
+      {
+        "id": 14,
+        "pregunta": "Quin es considera el primer home a la Lluna?",
+        "respostes": [
+          {"id": 1, "resposta": "Neil Armstrong", "correcta": true},
+          {"id": 2, "resposta": "Buzz Aldrin", "correcta": false},
+          {"id": 3, "resposta": "Yuri Gagarin", "correcta": false},
+          {"id": 4, "resposta": "John Glenn", "correcta": false}
+        ],
+        "imatge": "https://exemple.com/armstrong.jpg"
+      },
+      {
+        "id": 15,
+        "pregunta": "Quin és el principal ingredient del guacamole?",
+        "respostes": [
+          {"id": 1, "resposta": "Alvocat", "correcta": true},
+          {"id": 2, "resposta": "Tomàquet", "correcta": false},
+          {"id": 3, "resposta": "Ceball", "correcta": false},
+          {"id": 4, "resposta": "Pebrot", "correcta": false}
+        ],
+        "imatge": "https://exemple.com/alvocat.jpg"
+      }
+    ]
+  }
+  

@@ -1,10 +1,4 @@
-# Carpeta _/web_
+JSON: F1
+Funcionament:Tens 30 segons i has d’anar de responent preguntes fins que s’acabi el temps
+Temàtica: Joc per endevinar marques comercials (1 pregunta amb 4 respostes amb imatge)
 
-Aquesta carpeta ha de contenir l'aplicació, tot el que s'hagi de posar a la carpeta "public_html" del site.
-Típicament, els següents fitxers organitzats en les carpetes corresponents:
- -  html
- -  php
- -  png,jpg ...
- -  js
- -  css
- -  

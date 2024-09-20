@@ -1,0 +1,115 @@
+{
+	"preguntes": [
+	  {
+		"id": 1,
+		"pregunta": "Quina marca de cotxes utilitza el lema 'Ultimate Driving Machine'?",
+		"respostes": [
+		  { "id": 1, "resposta": "BMW", "correcta": true },
+		  { "id": 2, "resposta": "Mercedes-Benz", "correcta": false },
+		  { "id": 3, "resposta": "Audi", "correcta": false },
+		  { "id": 4, "resposta": "Lexus", "correcta": false }
+		],
+		"imatge": "https://exemple.com/bmw.jpg"
+	  },
+	  {
+		"id": 2,
+		"pregunta": "Quin animal és conegut com 'el rei de la selva'?",
+		"respostes": [
+		  { "id": 1, "resposta": "Leo", "correcta": false },
+		  { "id": 2, "resposta": "Elefant", "correcta": false },
+		  { "id": 3, "resposta": "Tigre", "correcta": false },
+		  { "id": 4, "resposta": "Lleó", "correcta": true }
+		],
+		"imatge": "https://exemple.com/leon.jpg"
+	  },
+	  {
+		"id": 3,
+		"pregunta": "Quin és l'element químic amb el símbol 'O'?",
+		"respostes": [
+		  { "id": 1, "resposta": "Oli", "correcta": false },
+		  { "id": 2, "resposta": "Oxigen", "correcta": true },
+		  { "id": 3, "resposta": "Osmio", "correcta": false },
+		  { "id": 4, "resposta": "Oberon", "correcta": false }
+		],
+		"imatge": "https://exemple.com/oxigen.jpg"
+	  },
+	  {
+		"id": 4,
+		"pregunta": "Quin és el planeta més gran del sistema solar?",
+		"respostes": [
+		  { "id": 1, "resposta": "Terra", "correcta": false },
+		  { "id": 2, "resposta": "Mart", "correcta": false },
+		  { "id": 3, "resposta": "Júpiter", "correcta": true },
+		  { "id": 4, "resposta": "Saturn", "correcta": false }
+		],
+		"imatge": "https://exemple.com/jupiter.jpg"
+	  },
+	  {
+		"id": 5,
+		"pregunta": "Quin és l'autor de 'Cien años de soledad'?",
+		"respostes": [
+		  { "id": 1, "resposta": "Gabriel García Márquez", "correcta": true },
+		  { "id": 2, "resposta": "Pablo Neruda", "correcta": false },
+		  { "id": 3, "resposta": "Julio Cortázar", "correcta": false },
+		  { "id": 4, "resposta": "Jorge Luis Borges", "correcta": false }
+		],
+		"imatge": "https://exemple.com/gabo.jpg"
+	  },
+	  {
+		"id": 6,
+		"pregunta": "Quina llengua es parla principalment a Brasil?",
+		"respostes": [
+		  { "id": 1, "resposta": "Espanyol", "correcta": false },
+		  { "id": 2, "resposta": "Anglès", "correcta": false },
+		  { "id": 3, "resposta": "Portuguès", "correcta": true },
+		  { "id": 4, "resposta": "Francès", "correcta": false }
+		],
+		"imatge": "https://exemple.com/brasil.jpg"
+	  },
+	  {
+		"id": 7,
+		"pregunta": "Quin és el metall més lleuger?",
+		"respostes": [
+		  { "id": 1, "resposta": "Alumini", "correcta": false },
+		  { "id": 2, "resposta": "Magnesi", "correcta": true },
+		  { "id": 3, "resposta": "Plom", "correcta": false },
+		  { "id": 4, "resposta": "Ferro", "correcta": false }
+		],
+		"imatge": "https://exemple.com/magnesi.jpg"
+	  },
+	  {
+		"id": 8,
+		"pregunta": "Quina és la capital d'Espanya?",
+		"respostes": [
+		  { "id": 1, "resposta": "Barcelona", "correcta": false },
+		  { "id": 2, "resposta": "Madrid", "correcta": true },
+		  { "id": 3, "resposta": "València", "correcta": false },
+		  { "id": 4, "resposta": "Sevilla", "correcta": false }
+		],
+		"imatge": "https://exemple.com/madrid.jpg"
+	  },
+	  {
+		"id": 9,
+		"pregunta": "Quin és el llibre més venut del món?",
+		"respostes": [
+		  { "id": 1, "resposta": "El Quixot", "correcta": false },
+		  { "id": 2, "resposta": "La Bíblia", "correcta": true },
+		  { "id": 3, "resposta": "Harry Potter", "correcta": false },
+		  { "id": 4, "resposta": "El senyor dels anells", "correcta": false }
+		],
+		"imatge": "https://exemple.com/biblia.jpg"
+	  },
+	  {
+		"id": 10,
+		"pregunta": "Quina és la moneda oficial del Japó?",
+		"respostes": [
+		  { "id": 1, "resposta": "Yuan", "correcta": false },
+		  { "id": 2, "resposta": "Dòlar", "correcta": false },
+		  { "id": 3, "resposta": "Ien", "correcta": true },
+		  { "id": 4, "resposta": "Euro", "correcta": false }
+		],
+		"imatge": "https://exemple.com/ien.jpg"
+	  }
+	]
+}
+  
