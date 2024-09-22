@@ -1,6 +1,12 @@
 <?php
 session_start();
 
+
+if(isset($_POST['reiniciar'])){
+    session_destroy();
+    session_start();
+}
+
 // Càrrega del fitxer JSON només si no hi ha preguntes guardades a la sessió
 if (!isset($_SESSION['preguntes'])) {
     $data = file_get_contents("./data.json");
@@ -8,11 +14,10 @@ if (!isset($_SESSION['preguntes'])) {
     
     $preguntas = $preguntas['preguntes'];
     shuffle($preguntas); //Barrejar les preguntes
-    $_SESSION['preguntes'] = array_slice($preguntas, 0, 10); //Guardem 10 preguntes a la sessió
 
-    //Inicialitzem l'índex i la puntuació
-    $_SESSION['index'] = 0;
-    $_SESSION['puntuacio'] = 0;
+    $_SESSION['preguntes'] = array_slice($preguntas, 0, 10); //Guardem 10 preguntes a la sessió    
+    $_SESSION['index'] = 0; //Iniciem l'index
+    $_SESSION['puntuacio'] = 0; //Iniciem la puntuació
 }
 
 //Agafem l'index i la pregunta actual
@@ -25,31 +30,31 @@ if ($index < count($preguntes)) {
     $preguntaActual = $preguntes[$index]; //Assignem la pregunta actual segons l'índex
 } else {
     //Mostrem el resultat
-    echo '<p>Has acabat el qüestionari. Has encertat ' . $_SESSION['puntuacio'] . ' preguntes de ' . count($preguntes) . '.</p>';
+    echo '<p>Has encertat ' . $_SESSION['puntuacio'] . ' preguntes de ' . count($preguntes) . '.</p>';
+    echo '<form method="post"> <button type="submit" name="reiniciar"> Tornar a jugar </button></form>';
     session_destroy(); //Destruim la sessio
     exit(); //Sense aquesta merda el questionari no para
 }
 
-//Verifiquem si l'usuari ha enviat una resposta
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['respostaUser'])) {
+if (isset($_POST['respostaUser'])) {
 
-    $respostaUser = (int)$_POST['respostaUser']; //Resposta de l'usuari
-    $respostaCorrecte = false;//Comprovem si la resposta enviada és correcta
+$respostaUser = $_POST['respostaUser']; //Agafem la resposta de l'usuari
+$respostaCorrecte = false; //Inicialitzem la variable
 
-    
-    foreach ($preguntaActual['respostes'] as $respuesta) {
-        if ($respuesta['id'] == $respostaUser) {
-            $respostaCorrecte = $respuesta['correcta'];//La resposta es correcta
-        }
+//Comprovem si la resposta es correcta
+for ($i = 0; $i < count($preguntaActual['respostes']); $i++) {
+    if ($preguntaActual['respostes'][$i]['id'] == $respostaUser) {
+        $respostaCorrecte = $preguntaActual['respostes'][$i]['correcta'];
     }
-
-    if ($respostaCorrecte) {
-        $_SESSION['puntuacio']++; //Incrementem la puntuació
-        $missatge =  "<p style='color: green;'> Correcte </p>";
-    } else {
-        $missatge =  "<p style='color: red;'> Incorrecte </p>";        
-    }
-    $_SESSION['index']++; //Incrementem l'índex per mostrar la següent pregunta
+}
+//Comprovem si la resposta es correcta o incorrecta
+if ($respostaCorrecte) {
+    $_SESSION['puntuacio']++; //Afegim +1 a la puntuació
+    $missatge = "<p style='color: green;'> Correcte </p>";
+} else {
+    $missatge = "<p style='color: red;'> Incorrecte </p>";        
+}
+$_SESSION['index']++; //Passem a la seguent pregunta
 }
 
 ?>
@@ -64,13 +69,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['respostaUser'])) {
 <body>
 <h1>Quiz</h1>
 
-<?php 
-//Mostrem el missatge si l'usuari ha enviat el formulari
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    echo $missatge; 
-}
-?>
-
 <?php if (isset($preguntaActual)): ?>
     <form method="post">
         <div class="pregunta">
@@ -81,11 +79,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <?php foreach ($preguntaActual['respostes'] as $respuesta) { 
                 //Imprimim les respostes
                 echo '<div>';
-                echo '<input type="radio" name="respostaUser" value="' . htmlspecialchars($respuesta['id']) . '">';
+                echo '<input type="radio" name="respostaUser" value="' .htmlspecialchars($respuesta['id']). '">';
                 echo htmlspecialchars($respuesta['resposta']);
                 echo '</div><br>';
             } 
             ?>
+            <?php echo $missatge; ?>
         </div>
         <button type="submit"> Enviar Resposta </button>
     </form>

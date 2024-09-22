@@ -13,103 +13,213 @@
 	  },
 	  {
 		"id": 2,
-		"pregunta": "Quin animal és conegut com 'el rei de la selva'?",
+		"pregunta": "Quina marca de mòbils utilitza el lema 'Think Different'?",
 		"respostes": [
-		  { "id": 1, "resposta": "Leo", "correcta": false },
-		  { "id": 2, "resposta": "Elefant", "correcta": false },
-		  { "id": 3, "resposta": "Tigre", "correcta": false },
-		  { "id": 4, "resposta": "Lleó", "correcta": true }
+		  { "id": 1, "resposta": "Apple", "correcta": true },
+		  { "id": 2, "resposta": "Samsung", "correcta": false },
+		  { "id": 3, "resposta": "Nokia", "correcta": false },
+		  { "id": 4, "resposta": "Huawei", "correcta": false }
 		],
-		"imatge": "https://exemple.com/leon.jpg"
+		"imatge": "https://exemple.com/apple.jpg"
 	  },
 	  {
 		"id": 3,
-		"pregunta": "Quin és l'element químic amb el símbol 'O'?",
+		"pregunta": "Quina marca de xocolata té el lema 'Unforgettable'?",
 		"respostes": [
-		  { "id": 1, "resposta": "Oli", "correcta": false },
-		  { "id": 2, "resposta": "Oxigen", "correcta": true },
-		  { "id": 3, "resposta": "Osmio", "correcta": false },
-		  { "id": 4, "resposta": "Oberon", "correcta": false }
+		  { "id": 1, "resposta": "Cadbury", "correcta": false },
+		  { "id": 2, "resposta": "Mars", "correcta": true },
+		  { "id": 3, "resposta": "Ferrero", "correcta": false },
+		  { "id": 4, "resposta": "Nestlé", "correcta": false }
 		],
-		"imatge": "https://exemple.com/oxigen.jpg"
+		"imatge": "https://exemple.com/mars.jpg"
 	  },
 	  {
 		"id": 4,
-		"pregunta": "Quin és el planeta més gran del sistema solar?",
+		"pregunta": "Quina marca de roba utilitza el lema 'Just Do It'?",
 		"respostes": [
-		  { "id": 1, "resposta": "Terra", "correcta": false },
-		  { "id": 2, "resposta": "Mart", "correcta": false },
-		  { "id": 3, "resposta": "Júpiter", "correcta": true },
-		  { "id": 4, "resposta": "Saturn", "correcta": false }
+		  { "id": 1, "resposta": "Nike", "correcta": true },
+		  { "id": 2, "resposta": "Adidas", "correcta": false },
+		  { "id": 3, "resposta": "Puma", "correcta": false },
+		  { "id": 4, "resposta": "Reebok", "correcta": false }
 		],
-		"imatge": "https://exemple.com/jupiter.jpg"
+		"imatge": "https://exemple.com/nike.jpg"
 	  },
 	  {
 		"id": 5,
-		"pregunta": "Quin és l'autor de 'Cien años de soledad'?",
+		"pregunta": "Quina marca de refrescos utilitza el lema 'Open Happiness'?",
 		"respostes": [
-		  { "id": 1, "resposta": "Gabriel García Márquez", "correcta": true },
-		  { "id": 2, "resposta": "Pablo Neruda", "correcta": false },
-		  { "id": 3, "resposta": "Julio Cortázar", "correcta": false },
-		  { "id": 4, "resposta": "Jorge Luis Borges", "correcta": false }
+		  { "id": 1, "resposta": "Pepsi", "correcta": false },
+		  { "id": 2, "resposta": "Coca-Cola", "correcta": true },
+		  { "id": 3, "resposta": "Fanta", "correcta": false },
+		  { "id": 4, "resposta": "Sprite", "correcta": false }
 		],
-		"imatge": "https://exemple.com/gabo.jpg"
+		"imatge": "https://exemple.com/coca-cola.jpg"
 	  },
 	  {
 		"id": 6,
-		"pregunta": "Quina llengua es parla principalment a Brasil?",
+		"pregunta": "Quina marca de videojocs utilitza el lema 'Live in Your World, Play in Ours'?",
 		"respostes": [
-		  { "id": 1, "resposta": "Espanyol", "correcta": false },
-		  { "id": 2, "resposta": "Anglès", "correcta": false },
-		  { "id": 3, "resposta": "Portuguès", "correcta": true },
-		  { "id": 4, "resposta": "Francès", "correcta": false }
+		  { "id": 1, "resposta": "PlayStation", "correcta": true },
+		  { "id": 2, "resposta": "Xbox", "correcta": false },
+		  { "id": 3, "resposta": "Nintendo", "correcta": false },
+		  { "id": 4, "resposta": "Sega", "correcta": false }
 		],
-		"imatge": "https://exemple.com/brasil.jpg"
+		"imatge": "https://exemple.com/playstation.jpg"
 	  },
 	  {
 		"id": 7,
-		"pregunta": "Quin és el metall més lleuger?",
+		"pregunta": "Quina marca de cafè utilitza el lema 'Good to the Last Drop'?",
 		"respostes": [
-		  { "id": 1, "resposta": "Alumini", "correcta": false },
-		  { "id": 2, "resposta": "Magnesi", "correcta": true },
-		  { "id": 3, "resposta": "Plom", "correcta": false },
-		  { "id": 4, "resposta": "Ferro", "correcta": false }
+		  { "id": 1, "resposta": "Folgers", "correcta": true },
+		  { "id": 2, "resposta": "Nescafé", "correcta": false },
+		  { "id": 3, "resposta": "Starbucks", "correcta": false },
+		  { "id": 4, "resposta": "Dunkin'", "correcta": false }
 		],
-		"imatge": "https://exemple.com/magnesi.jpg"
+		"imatge": "https://exemple.com/folgers.jpg"
 	  },
 	  {
 		"id": 8,
-		"pregunta": "Quina és la capital d'Espanya?",
+		"pregunta": "Quina marca de vehicles utilitza el lema 'The Best or Nothing'?",
 		"respostes": [
-		  { "id": 1, "resposta": "Barcelona", "correcta": false },
-		  { "id": 2, "resposta": "Madrid", "correcta": true },
-		  { "id": 3, "resposta": "València", "correcta": false },
-		  { "id": 4, "resposta": "Sevilla", "correcta": false }
+		  { "id": 1, "resposta": "Mercedes-Benz", "correcta": true },
+		  { "id": 2, "resposta": "BMW", "correcta": false },
+		  { "id": 3, "resposta": "Audi", "correcta": false },
+		  { "id": 4, "resposta": "Lexus", "correcta": false }
 		],
-		"imatge": "https://exemple.com/madrid.jpg"
+		"imatge": "https://exemple.com/mercedes.jpg"
 	  },
 	  {
 		"id": 9,
-		"pregunta": "Quin és el llibre més venut del món?",
+		"pregunta": "Quina marca de gelats utilitza el lema 'Irresistibly Delicious'?",
 		"respostes": [
-		  { "id": 1, "resposta": "El Quixot", "correcta": false },
-		  { "id": 2, "resposta": "La Bíblia", "correcta": true },
-		  { "id": 3, "resposta": "Harry Potter", "correcta": false },
-		  { "id": 4, "resposta": "El senyor dels anells", "correcta": false }
+		  { "id": 1, "resposta": "Haagen-Dazs", "correcta": true },
+		  { "id": 2, "resposta": "Ben & Jerry's", "correcta": false },
+		  { "id": 3, "resposta": "Breyers", "correcta": false },
+		  { "id": 4, "resposta": "Dreyer's", "correcta": false }
 		],
-		"imatge": "https://exemple.com/biblia.jpg"
+		"imatge": "https://exemple.com/haagen-dazs.jpg"
 	  },
 	  {
 		"id": 10,
-		"pregunta": "Quina és la moneda oficial del Japó?",
+		"pregunta": "Quina marca de càmeres utilitza el lema 'Change the Way You See the World'?",
 		"respostes": [
-		  { "id": 1, "resposta": "Yuan", "correcta": false },
-		  { "id": 2, "resposta": "Dòlar", "correcta": false },
-		  { "id": 3, "resposta": "Ien", "correcta": true },
-		  { "id": 4, "resposta": "Euro", "correcta": false }
+		  { "id": 1, "resposta": "Canon", "correcta": false },
+		  { "id": 2, "resposta": "Nikon", "correcta": false },
+		  { "id": 3, "resposta": "GoPro", "correcta": true },
+		  { "id": 4, "resposta": "Sony", "correcta": false }
 		],
-		"imatge": "https://exemple.com/ien.jpg"
+		"imatge": "https://exemple.com/gopro.jpg"
+	  },
+	  {
+		"id": 11,
+		"pregunta": "Quina marca de telèfons utilitza el lema 'Life's Good'?",
+		"respostes": [
+		  { "id": 1, "resposta": "LG", "correcta": true },
+		  { "id": 2, "resposta": "Samsung", "correcta": false },
+		  { "id": 3, "resposta": "HTC", "correcta": false },
+		  { "id": 4, "resposta": "Motorola", "correcta": false }
+		],
+		"imatge": "https://exemple.com/lg.jpg"
+	  },
+	  {
+		"id": 12,
+		"pregunta": "Quina marca de sabates utilitza el lema 'There is no finish line'?",
+		"respostes": [
+		  { "id": 1, "resposta": "Nike", "correcta": false },
+		  { "id": 2, "resposta": "Adidas", "correcta": true },
+		  { "id": 3, "resposta": "Reebok", "correcta": false },
+		  { "id": 4, "resposta": "Puma", "correcta": false }
+		],
+		"imatge": "https://exemple.com/adidas.jpg"
+	  },
+	  {
+		"id": 13,
+		"pregunta": "Quina marca de menjar ràpid utilitza el lema 'Have It Your Way'?",
+		"respostes": [
+		  { "id": 1, "resposta": "McDonald's", "correcta": false },
+		  { "id": 2, "resposta": "Burger King", "correcta": true },
+		  { "id": 3, "resposta": "Wendy's", "correcta": false },
+		  { "id": 4, "resposta": "KFC", "correcta": false }
+		],
+		"imatge": "https://exemple.com/burgerking.jpg"
+	  },
+	  {
+		"id": 14,
+		"pregunta": "Quina marca de cosmètics utilitza el lema 'Because You're Worth It'?",
+		"respostes": [
+		  { "id": 1, "resposta": "L'Oreal", "correcta": true },
+		  { "id": 2, "resposta": "Maybelline", "correcta": false },
+		  { "id": 3, "resposta": "Revlon", "correcta": false },
+		  { "id": 4, "resposta": "Estée Lauder", "correcta": false }
+		],
+		"imatge": "https://exemple.com/loreal.jpg"
+	  },
+	  {
+		"id": 15,
+		"pregunta": "Quina marca de xampú utilitza el lema 'Strong is Beautiful'?",
+		"respostes": [
+		  { "id": 1, "resposta": "Pantene", "correcta": true },
+		  { "id": 2, "resposta": "Head & Shoulders", "correcta": false },
+		  { "id": 3, "resposta": "Dove", "correcta": false },
+		  { "id": 4, "resposta": "Tresemmé", "correcta": false }
+		],
+		"imatge": "https://exemple.com/pantene.jpg"
+	  },
+	  {
+		"id": 16,
+		"pregunta": "Quina marca de tè utilitza el lema 'The Tea of a Thousand Flavors'?",
+		"respostes": [
+		  { "id": 1, "resposta": "Lipton", "correcta": true },
+		  { "id": 2, "resposta": "Twinings", "correcta": false },
+		  { "id": 3, "resposta": "Dilmah", "correcta": false },
+		  { "id": 4, "resposta": "Celestial Seasonings", "correcta": false }
+		],
+		"imatge": "https://exemple.com/lipton.jpg"
+	  },
+	  {
+		"id": 17,
+		"pregunta": "Quina marca de xampany utilitza el lema 'For the Good Times'?",
+		"respostes": [
+		  { "id": 1, "resposta": "Moët & Chandon", "correcta": true },
+		  { "id": 2, "resposta": "Veuve Clicquot", "correcta": false },
+		  { "id": 3, "resposta": "Dom Pérignon", "correcta": false },
+		  { "id": 4, "resposta": "Cristal", "correcta": false }
+		],
+		"imatge": "https://exemple.com/moet.jpg"
+	  },
+	  {
+		"id": 18,
+		"pregunta": "Quina marca de videojocs utilitza el lema 'It's in the Game'?",
+		"respostes": [
+		  { "id": 1, "resposta": "EA Sports", "correcta": true },
+		  { "id": 2, "resposta": "Activision", "correcta": false },
+		  { "id": 3, "resposta": "Ubisoft", "correcta": false },
+		  { "id": 4, "resposta": "Bethesda", "correcta": false }
+		],
+		"imatge": "https://exemple.com/easports.jpg"
+	  },
+	  {
+		"id": 19,
+		"pregunta": "Quina marca de joguines utilitza el lema 'Play-Doh, The Fun Factory'?",
+		"respostes": [
+		  { "id": 1, "resposta": "Play-Doh", "correcta": true },
+		  { "id": 2, "resposta": "LEGO", "correcta": false },
+		  { "id": 3, "resposta": "Fisher-Price", "correcta": false },
+		  { "id": 4, "resposta": "Mattel", "correcta": false }
+		],
+		"imatge": "https://exemple.com/play-doh.jpg"
+	  },
+	  {
+		"id": 20,
+		"pregunta": "Quina marca de perfums utilitza el lema 'The One'?",
+		"respostes": [
+		  { "id": 1, "resposta": "Dolce & Gabbana", "correcta": true },
+		  { "id": 2, "resposta": "Chanel", "correcta": false },
+		  { "id": 3, "resposta": "Gucci", "correcta": false },
+		  { "id": 4, "resposta": "Versace", "correcta": false }
+		],
+		"imatge": "https://exemple.com/dolce.jpg"
 	  }
 	]
-}
+  }
   
