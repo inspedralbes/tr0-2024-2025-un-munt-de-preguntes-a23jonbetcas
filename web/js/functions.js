@@ -3,8 +3,14 @@ let preguntaActual = 0;
 
 // Carreguem les preguntes
 function carregarPreguntes() {
-    fetch('http://localhost/tr0-2024-2025-un-munt-de-preguntes-a23jonbetcas/back/data.json')
-        .then(response => response.json())
+    fetch('localhost/tr0-2024-2025-un-munt-de-preguntes-a23jonbetcas/back/getPreguntes.php',{
+      method: "POST",
+      body: JSON.stringify(10),  
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+    .then(response => response.json())
         .then(info => {
             data = info;
             mostrarPreguntes();

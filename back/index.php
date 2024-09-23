@@ -2,11 +2,6 @@
 session_start();
 
 
-if(isset($_POST['reiniciar'])){
-    session_destroy();
-    session_start();
-}
-
 // Càrrega del fitxer JSON només si no hi ha preguntes guardades a la sessió
 if (!isset($_SESSION['preguntes'])) {
     $data = file_get_contents("./data.json");
@@ -14,10 +9,13 @@ if (!isset($_SESSION['preguntes'])) {
     
     $preguntas = $preguntas['preguntes'];
     shuffle($preguntas); //Barrejar les preguntes
+    $deuPreguntes = array_slice($preguntas, 0, 10); //agafem 
 
-    $_SESSION['preguntes'] = array_slice($preguntas, 0, 10); //Guardem 10 preguntes a la sessió    
-    $_SESSION['index'] = 0; //Iniciem l'index
-    $_SESSION['puntuacio'] = 0; //Iniciem la puntuació
+    if(!isset($_SESSION['preguntes'])){
+        $_SESSION['preguntes']= $deuPreguntes;
+        $_SESSION['index'] = 0; //Iniciem l'index
+        $_SESSION['puntuacio'] = 0; //Iniciem la puntuació
+    }
 }
 
 //Agafem l'index i la pregunta actual
@@ -30,23 +28,23 @@ if ($index < count($preguntes)) {
     $preguntaActual = $preguntes[$index]; //Assignem la pregunta actual segons l'índex
 } else {
     //Mostrem el resultat
-    echo '<p>Has encertat ' . $_SESSION['puntuacio'] . ' preguntes de ' . count($preguntes) . '.</p>';
+    echo '<p>Has encertat ' .$_SESSION['puntuacio'].' preguntes de '.count($preguntes).'.</p>';
     echo '<form method="post"> <button type="submit" name="reiniciar"> Tornar a jugar </button></form>';
     session_destroy(); //Destruim la sessio
     exit(); //Sense aquesta merda el questionari no para
 }
-
+  
 if (isset($_POST['respostaUser'])) {
-
 $respostaUser = $_POST['respostaUser']; //Agafem la resposta de l'usuari
 $respostaCorrecte = false; //Inicialitzem la variable
 
 //Comprovem si la resposta es correcta
-for ($i = 0; $i < count($preguntaActual['respostes']); $i++) {
+for ($i = 0; $i < count($preguntaActual['respostes']); $i++) {  
     if ($preguntaActual['respostes'][$i]['id'] == $respostaUser) {
         $respostaCorrecte = $preguntaActual['respostes'][$i]['correcta'];
     }
 }
+
 //Comprovem si la resposta es correcta o incorrecta
 if ($respostaCorrecte) {
     $_SESSION['puntuacio']++; //Afegim +1 a la puntuació
@@ -88,7 +86,7 @@ $_SESSION['index']++; //Passem a la seguent pregunta
         </div>
         <button type="submit"> Enviar Resposta </button>
     </form>
-<?php endif; ?>
+<?php endif;echo $index; ?>
 
 </body>
 </html>
