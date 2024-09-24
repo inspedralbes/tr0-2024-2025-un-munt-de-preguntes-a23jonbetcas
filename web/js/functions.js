@@ -71,7 +71,6 @@ function mostrarPreguntes() {
 
 
 function comprovarResposta(iPreg, iRes) {
-
     if (tempsAcabat) {
         alert("Temps esgotat!");
         return;

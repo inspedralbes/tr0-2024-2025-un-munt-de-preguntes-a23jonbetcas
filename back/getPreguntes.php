@@ -3,6 +3,12 @@ session_start();
 
 header('Content-Type: application/json');
 
+/*
+https://www.php.net/manual/es/function.define.php
+provar a fer servir el define en el $numPreguntes
+*/
+
+
 //Carreguem el JSON
 $data = file_get_contents("./data.json");
 $arrayPreguntes = json_decode($data, true); //Array amb les preguntes i respostes
