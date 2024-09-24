@@ -13,3 +13,16 @@ Temàtica: Joc per endevinar marques comercials (1 pregunta amb 4 respostes amb 
 
     L'us del ` ` permet incrustar expressions dins d'una cadena fent servir la sintaxis ${},
     ja que es molt mes llegible que concatenar amb un +. per exemple ${tempsRestant}
+
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide#iterators_and_generators
+
+    PHP manuals:
+
+    https://www.php.net/manual/es/book.session.php
+    https://www.php.net/manual/es/function.file-get-contents.php
+    https://www.php.net/manual/es/function.header.php
+    https://www.php.net/manual/es/function.file-get-contents.php
+    https://www.php.net/manual/es/book.json.php
+    https://www.php.net/manual/es/language.types.array.php
+    https://www.php.net/manual/es/language.types.boolean.php#language.types.boolean.operators
+    https://www.php.net/manual/es/book.errorfunc.php
