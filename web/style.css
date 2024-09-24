@@ -2,19 +2,19 @@ body, html {
     height: 100%;
     margin: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
+#estatPartida {
+    margin-bottom: 10px; 
+}
+
 #partida {
-    text-align: center;
-    border: 1px solid #ddd;
+    border: 1px solid #000;
     padding: 20px;
-    background-color: #f9f9f9;
 }
 
 button {
-    display: block;
-    margin: 10px auto;
-    padding: 10px 20px;
+    margin: 5px;
 }

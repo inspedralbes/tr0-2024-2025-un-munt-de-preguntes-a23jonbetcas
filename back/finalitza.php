@@ -1,6 +1,17 @@
-/*
+<?php
+session_start();
 
-//Fitxer per a comparar respostes
-$entrada []; //Array d'enters amb els index de les respostes
-$sortida;// objecte amb dos elements, nombre total de respostes i nombre de respostes correctes
-*/
+$respostesCorrectes = 0;
+$totalRespostes = count($_SESSION['preguntes']);
+
+foreach($_POST['respostes'] as $index => $respostaID) {
+if($_SESSION['preguntes'][$index]['respostes'][$respostaID]['correcta']) {
+    $respostesCorrectes++;
+    }
+}
+
+echo json_encode([
+    'totalResp' => $totalRespostes,
+    'totalCorrectes' => $respostesCorrectes
+    ]);
+?>
