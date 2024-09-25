@@ -5,11 +5,20 @@ Temàtica: Joc per endevinar marques comercials (1 pregunta amb 4 respostes amb 
 
 
     /*preguntar al alvaro
-    punt.addEventListener("click", (e) => {
+    punt.addEventListener("click", function(e) => {
         if(e.target.classList.contains('gallery-item')){
-            const iRes = e.target.getAttribute('data-resposta');
+            const iRes = e.target.getAttribute('data-resposta'); 
         }
     });*/
+
+el document.getelementbyis("botoprova").addkeyeventlistener("click",function(e))
+va en el js vinculantlo directament a la funcion que volguem tractar, en le html s'ha de crear el buton amb id "botoprova".
+
+La funcio hauria de recopilar la info que envia l'usuari i emmagatzemarho a l'objecte estatdelapartida per a poderho enviar al fitxer finalitza.php
+
+
+
+
 
     L'us del ` ` permet incrustar expressions dins d'una cadena fent servir la sintaxis ${},
     ja que es molt mes llegible que concatenar amb un +. per exemple ${tempsRestant}
@@ -26,3 +35,4 @@ Temàtica: Joc per endevinar marques comercials (1 pregunta amb 4 respostes amb 
     https://www.php.net/manual/es/language.types.array.php
     https://www.php.net/manual/es/language.types.boolean.php#language.types.boolean.operators
     https://www.php.net/manual/es/book.errorfunc.php
+    http://www.micmap.org/php-by-example/manual/es/function.unset.html

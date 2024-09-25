@@ -10,9 +10,24 @@ let estatDeLaPartida = {
     preguntesResposes: 1,
 };
 
+function enviarPreguntes(){
+    fetch('../back/finalitza.php',
+        {
+         method: "POST",
+         body: JSON.stringify(estatDeLaPartida),
+         headers: {
+              "Content-Type": "application/json",
+            },
+        })
+        .then(response => response.json())
+        .then(info => {
+        console.log(info);
+        data = info;                
+    });
+}
+
 // Carreguem les preguntes
-function carregarPreguntes() {
-    fetch('http://localhost/tr0-2024-2025-un-munt-de-preguntes-a23jonbetcas/back/getPreguntes.php', {
+    fetch('../back/getPreguntes.php', {
         method: "POST",
         body: JSON.stringify({ count: 10 }),
         headers: {
@@ -23,15 +38,10 @@ function carregarPreguntes() {
     .then(info => {
         console.log(info);
         data = info;
-        iniciarTemporitzador();
+        temporitzador = setInterval(comptadorTemps, 1000);
         mostrarPreguntes();        
     });
-}
 
-/* FUNCIONS DEL CRONO*/
-function iniciarTemporitzador() {
-    temporitzador = setInterval(comptadorTemps, 1000);
-}
 //Comptador de temps
 function comptadorTemps() {
     if (tempsRestant > 0) {
@@ -39,7 +49,6 @@ function comptadorTemps() {
         actualizarMarcador(); //actualitzacio del marcador i temps
     } else {
         tempsAcabat = true;
-        clearInterval(temporitzador); //aturem el temp
         alert("Temps esgotat");
         finalitzarPartida(); //acabem el joc
     }
@@ -61,7 +70,7 @@ function mostrarPreguntes() {
 
         // Utilitzem un bucle for molt bàsic per afegir les respostes com botons
         for (let i = 0; i < pregunta.respostes.length; i++) {
-            htmlString += `<button pregunta="${preguntaActual}" resposta="${i}" onclick="comprovarResposta(${preguntaActual}, ${i})">
+            htmlString += `<button pregunta="${preguntaActual}" resposta="${i}">
             ${pregunta.respostes[i].resposta} 
          </button>`;
   }
@@ -92,6 +101,3 @@ function finalitzarPartida() {
     estatCrono.innerHTML += '<p>Test finalitzat!</p>';
     clearInterval(temporitzador);
 }
-
-// Iniciar el joc
-carregarPreguntes();

@@ -1,17 +1,18 @@
 <?php
 session_start();
 
-$respostesCorrectes = 0;
-$totalRespostes = count($_SESSION['preguntes']);
+$data = json_decode(file_get_contents('php://input'));
 
-foreach($_POST['respostes'] as $index => $respostaID) {
-if($_SESSION['preguntes'][$index]['respostes'][$respostaID]['correcta']) {
-    $respostesCorrectes++;
-    }
-}
+$preguntesResposes = 0;
 
-echo json_encode([
-    'totalResp' => $totalRespostes,
-    'totalCorrectes' => $respostesCorrectes
-    ]);
+$validacio= new stdClass{};
+
+$validacio->iddelapregunta = "pepe";
+$validacio->iddelaporonga = "pepo";
+$enelarray = $validacio
+
+un objecte amb dos elements. Nombre total de respostes, i nombre de respostes correctes.
+
+
+
 ?>
