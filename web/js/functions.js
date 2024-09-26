@@ -81,7 +81,6 @@ document.getElementById("partida").addEventListener("click", function(e) {
         const indexRes = e.target.getAttribute("resp");
         const indexPreg = e.target.getAttribute("preg");
         guardarRespostes(indexPreg, indexRes);
-        actualizarMarcador();
     }
 });
 function guardarRespostes(iPreg, iRes) {
@@ -89,10 +88,15 @@ function guardarRespostes(iPreg, iRes) {
         alert("Temps esgotat!");
         return;
     }
-    
-    if (preguntaActual < data.length) {
-        mostrarPreguntes();
+
+    estatDeLaPartida[preguntaActual] = {
+        pregunta: iPreg,
+        resposta: iRes
+    };
+
+    if (preguntaActual < data.length - 1) {
         preguntaActual++;
+        mostrarPreguntes();
     } else {
         finalitzarPartida();
     }
