@@ -2,15 +2,6 @@ JSON: F1
 Funcionament:Tens 30 segons i has d’anar de responent preguntes fins que s’acabi el temps
 Temàtica: Joc per endevinar marques comercials (1 pregunta amb 4 respostes amb imatge)
 
-
-
-    /*preguntar al alvaro
-    punt.addEventListener("click", function(e) => {
-        if(e.target.classList.contains('gallery-item')){
-            const iRes = e.target.getAttribute('data-resposta'); 
-        }
-    });*/
-
 el document.getelementbyis("botoprova").addkeyeventlistener("click",function(e))
 va en el js vinculantlo directament a la funcion que volguem tractar, en le html s'ha de crear el buton amb id "botoprova".
 
