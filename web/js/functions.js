@@ -68,9 +68,8 @@ function mostrarPreguntes() {
         const pregunta = data[preguntaActual];
         htmlString += '<h2>' + pregunta.pregunta + '</h2>';
 
-        // Utilitzem un bucle for molt bàsic per afegir les respostes com botons
         for (let i = 0; i < pregunta.respostes.length; i++) {
-            htmlString += `<button pregunta="${preguntaActual}" resposta="${i}">
+            htmlString += `<button class="botoResposta" pregunta="${preguntaActual}" resposta="${i}">
             ${pregunta.respostes[i].resposta} 
          </button>`;
   }
@@ -78,7 +77,13 @@ function mostrarPreguntes() {
     }
 }
 
+let btn = document.querySelector('partida')
+btn.getElementById("botoResposta").addEventListener("click",function(e){
+    if(e.target.classList.contains('gallery-item')){
 
+      }
+});
+/*
 function comprovarResposta(iPreg, iRes) {
     if (tempsAcabat) {
         alert("Temps esgotat!");
@@ -96,6 +101,7 @@ function comprovarResposta(iPreg, iRes) {
     preguntaActual < data.length ? mostrarPreguntes() : finalitzarPartida();
 
 }
+    */
 function finalitzarPartida() {
     const estatCrono = document.getElementById("estatPartida");
     estatCrono.innerHTML += '<p>Test finalitzat!</p>';
