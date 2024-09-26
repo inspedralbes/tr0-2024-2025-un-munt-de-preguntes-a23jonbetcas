@@ -1,0 +1,225 @@
+{
+	"preguntes": [
+	  {
+		"id": 1,
+		"pregunta": "Quina marca de cotxes utilitza el lema 'Ultimate Driving Machine'?",
+		"respostes": [
+		  { "id": 1, "resposta": "BMW", "correcta": true },
+		  { "id": 2, "resposta": "Mercedes-Benz", "correcta": false },
+		  { "id": 3, "resposta": "Audi", "correcta": false },
+		  { "id": 4, "resposta": "Lexus", "correcta": false }
+		],
+		"imatge": "https://exemple.com/bmw.jpg"
+	  },
+	  {
+		"id": 2,
+		"pregunta": "Quina marca de mòbils utilitza el lema 'Think Different'?",
+		"respostes": [
+		  { "id": 1, "resposta": "Apple", "correcta": true },
+		  { "id": 2, "resposta": "Samsung", "correcta": false },
+		  { "id": 3, "resposta": "Nokia", "correcta": false },
+		  { "id": 4, "resposta": "Huawei", "correcta": false }
+		],
+		"imatge": "https://exemple.com/apple.jpg"
+	  },
+	  {
+		"id": 3,
+		"pregunta": "Quina marca de xocolata té el lema 'Unforgettable'?",
+		"respostes": [
+		  { "id": 1, "resposta": "Cadbury", "correcta": false },
+		  { "id": 2, "resposta": "Mars", "correcta": true },
+		  { "id": 3, "resposta": "Ferrero", "correcta": false },
+		  { "id": 4, "resposta": "Nestlé", "correcta": false }
+		],
+		"imatge": "https://exemple.com/mars.jpg"
+	  },
+	  {
+		"id": 4,
+		"pregunta": "Quina marca de roba utilitza el lema 'Just Do It'?",
+		"respostes": [
+		  { "id": 1, "resposta": "Nike", "correcta": true },
+		  { "id": 2, "resposta": "Adidas", "correcta": false },
+		  { "id": 3, "resposta": "Puma", "correcta": false },
+		  { "id": 4, "resposta": "Reebok", "correcta": false }
+		],
+		"imatge": "https://exemple.com/nike.jpg"
+	  },
+	  {
+		"id": 5,
+		"pregunta": "Quina marca de refrescos utilitza el lema 'Open Happiness'?",
+		"respostes": [
+		  { "id": 1, "resposta": "Pepsi", "correcta": false },
+		  { "id": 2, "resposta": "Coca-Cola", "correcta": true },
+		  { "id": 3, "resposta": "Fanta", "correcta": false },
+		  { "id": 4, "resposta": "Sprite", "correcta": false }
+		],
+		"imatge": "https://exemple.com/coca-cola.jpg"
+	  },
+	  {
+		"id": 6,
+		"pregunta": "Quina marca de videojocs utilitza el lema 'Live in Your World, Play in Ours'?",
+		"respostes": [
+		  { "id": 1, "resposta": "PlayStation", "correcta": true },
+		  { "id": 2, "resposta": "Xbox", "correcta": false },
+		  { "id": 3, "resposta": "Nintendo", "correcta": false },
+		  { "id": 4, "resposta": "Sega", "correcta": false }
+		],
+		"imatge": "https://exemple.com/playstation.jpg"
+	  },
+	  {
+		"id": 7,
+		"pregunta": "Quina marca de cafè utilitza el lema 'Good to the Last Drop'?",
+		"respostes": [
+		  { "id": 1, "resposta": "Folgers", "correcta": true },
+		  { "id": 2, "resposta": "Nescafé", "correcta": false },
+		  { "id": 3, "resposta": "Starbucks", "correcta": false },
+		  { "id": 4, "resposta": "Dunkin'", "correcta": false }
+		],
+		"imatge": "https://exemple.com/folgers.jpg"
+	  },
+	  {
+		"id": 8,
+		"pregunta": "Quina marca de vehicles utilitza el lema 'The Best or Nothing'?",
+		"respostes": [
+		  { "id": 1, "resposta": "Mercedes-Benz", "correcta": true },
+		  { "id": 2, "resposta": "BMW", "correcta": false },
+		  { "id": 3, "resposta": "Audi", "correcta": false },
+		  { "id": 4, "resposta": "Lexus", "correcta": false }
+		],
+		"imatge": "https://exemple.com/mercedes.jpg"
+	  },
+	  {
+		"id": 9,
+		"pregunta": "Quina marca de gelats utilitza el lema 'Irresistibly Delicious'?",
+		"respostes": [
+		  { "id": 1, "resposta": "Haagen-Dazs", "correcta": true },
+		  { "id": 2, "resposta": "Ben & Jerry's", "correcta": false },
+		  { "id": 3, "resposta": "Breyers", "correcta": false },
+		  { "id": 4, "resposta": "Dreyer's", "correcta": false }
+		],
+		"imatge": "https://exemple.com/haagen-dazs.jpg"
+	  },
+	  {
+		"id": 10,
+		"pregunta": "Quina marca de càmeres utilitza el lema 'Change the Way You See the World'?",
+		"respostes": [
+		  { "id": 1, "resposta": "Canon", "correcta": false },
+		  { "id": 2, "resposta": "Nikon", "correcta": false },
+		  { "id": 3, "resposta": "GoPro", "correcta": true },
+		  { "id": 4, "resposta": "Sony", "correcta": false }
+		],
+		"imatge": "https://exemple.com/gopro.jpg"
+	  },
+	  {
+		"id": 11,
+		"pregunta": "Quina marca de telèfons utilitza el lema 'Life's Good'?",
+		"respostes": [
+		  { "id": 1, "resposta": "LG", "correcta": true },
+		  { "id": 2, "resposta": "Samsung", "correcta": false },
+		  { "id": 3, "resposta": "HTC", "correcta": false },
+		  { "id": 4, "resposta": "Motorola", "correcta": false }
+		],
+		"imatge": "https://exemple.com/lg.jpg"
+	  },
+	  {
+		"id": 12,
+		"pregunta": "Quina marca de sabates utilitza el lema 'There is no finish line'?",
+		"respostes": [
+		  { "id": 1, "resposta": "Nike", "correcta": false },
+		  { "id": 2, "resposta": "Adidas", "correcta": true },
+		  { "id": 3, "resposta": "Reebok", "correcta": false },
+		  { "id": 4, "resposta": "Puma", "correcta": false }
+		],
+		"imatge": "https://exemple.com/adidas.jpg"
+	  },
+	  {
+		"id": 13,
+		"pregunta": "Quina marca de menjar ràpid utilitza el lema 'Have It Your Way'?",
+		"respostes": [
+		  { "id": 1, "resposta": "McDonald's", "correcta": false },
+		  { "id": 2, "resposta": "Burger King", "correcta": true },
+		  { "id": 3, "resposta": "Wendy's", "correcta": false },
+		  { "id": 4, "resposta": "KFC", "correcta": false }
+		],
+		"imatge": "https://exemple.com/burgerking.jpg"
+	  },
+	  {
+		"id": 14,
+		"pregunta": "Quina marca de cosmètics utilitza el lema 'Because You're Worth It'?",
+		"respostes": [
+		  { "id": 1, "resposta": "L'Oreal", "correcta": true },
+		  { "id": 2, "resposta": "Maybelline", "correcta": false },
+		  { "id": 3, "resposta": "Revlon", "correcta": false },
+		  { "id": 4, "resposta": "Estée Lauder", "correcta": false }
+		],
+		"imatge": "https://exemple.com/loreal.jpg"
+	  },
+	  {
+		"id": 15,
+		"pregunta": "Quina marca de xampú utilitza el lema 'Strong is Beautiful'?",
+		"respostes": [
+		  { "id": 1, "resposta": "Pantene", "correcta": true },
+		  { "id": 2, "resposta": "Head & Shoulders", "correcta": false },
+		  { "id": 3, "resposta": "Dove", "correcta": false },
+		  { "id": 4, "resposta": "Tresemmé", "correcta": false }
+		],
+		"imatge": "https://exemple.com/pantene.jpg"
+	  },
+	  {
+		"id": 16,
+		"pregunta": "Quina marca de tè utilitza el lema 'The Tea of a Thousand Flavors'?",
+		"respostes": [
+		  { "id": 1, "resposta": "Lipton", "correcta": true },
+		  { "id": 2, "resposta": "Twinings", "correcta": false },
+		  { "id": 3, "resposta": "Dilmah", "correcta": false },
+		  { "id": 4, "resposta": "Celestial Seasonings", "correcta": false }
+		],
+		"imatge": "https://exemple.com/lipton.jpg"
+	  },
+	  {
+		"id": 17,
+		"pregunta": "Quina marca de xampany utilitza el lema 'For the Good Times'?",
+		"respostes": [
+		  { "id": 1, "resposta": "Moët & Chandon", "correcta": true },
+		  { "id": 2, "resposta": "Veuve Clicquot", "correcta": false },
+		  { "id": 3, "resposta": "Dom Pérignon", "correcta": false },
+		  { "id": 4, "resposta": "Cristal", "correcta": false }
+		],
+		"imatge": "https://exemple.com/moet.jpg"
+	  },
+	  {
+		"id": 18,
+		"pregunta": "Quina marca de videojocs utilitza el lema 'It's in the Game'?",
+		"respostes": [
+		  { "id": 1, "resposta": "EA Sports", "correcta": true },
+		  { "id": 2, "resposta": "Activision", "correcta": false },
+		  { "id": 3, "resposta": "Ubisoft", "correcta": false },
+		  { "id": 4, "resposta": "Bethesda", "correcta": false }
+		],
+		"imatge": "https://exemple.com/easports.jpg"
+	  },
+	  {
+		"id": 19,
+		"pregunta": "Quina marca de joguines utilitza el lema 'Play-Doh, The Fun Factory'?",
+		"respostes": [
+		  { "id": 1, "resposta": "Play-Doh", "correcta": true },
+		  { "id": 2, "resposta": "LEGO", "correcta": false },
+		  { "id": 3, "resposta": "Fisher-Price", "correcta": false },
+		  { "id": 4, "resposta": "Mattel", "correcta": false }
+		],
+		"imatge": "https://exemple.com/play-doh.jpg"
+	  },
+	  {
+		"id": 20,
+		"pregunta": "Quina marca de perfums utilitza el lema 'The One'?",
+		"respostes": [
+		  { "id": 1, "resposta": "Dolce & Gabbana", "correcta": true },
+		  { "id": 2, "resposta": "Chanel", "correcta": false },
+		  { "id": 3, "resposta": "Gucci", "correcta": false },
+		  { "id": 4, "resposta": "Versace", "correcta": false }
+		],
+		"imatge": "https://exemple.com/dolce.jpg"
+	  }
+	]
+  }
+  
