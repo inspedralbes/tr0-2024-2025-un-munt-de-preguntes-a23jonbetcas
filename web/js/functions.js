@@ -1,35 +1,11 @@
 let data = []; // guardar preguntes i respostes que obtenim del server 
 let preguntaActual = 0; // establim un index per a la pregunta actual
-let tempsRestant = 30; // 10 segons per defecte
+let tempsRestant = 5; // 10 segons per defecte
 let temporitzador; // variable per a la resta de temps
 let tempsAcabat = false;
 
-let estatDeLaPartida = [
-    envResp = new Array()
-];
+let estatDeLaPartida = [];
 
-function rebreRespostes(info){
-    let objeto = {
-        totalResp = info.
-    
-    document.getElementById('pedro').classRemove
-}
-}
-
-function enviarPreguntes() {
-    fetch(`../back/finalitza.php`,
-        {
-            method: "POST",
-            body: JSON.stringify(estatDeLaPartida),
-            headers: {
-                "Content-Type": "application/json",
-            },
-        })
-        .then(response => response.json())
-        .then(info => {
-            rebreRespostes(info)
-        });
-}
 
 // Carreguem les preguntes
 fetch(`../back/getPreguntes.php`, {
@@ -46,11 +22,35 @@ fetch(`../back/getPreguntes.php`, {
         temporitzador = setInterval(comptadorTemps, 1000);
         mostrarPreguntes();
     });
+function rebreRespostes(info){
+    let objeto = {
+        totalRespostes: info.totalResp,
+        respostesCorrectes: info.correcte,
+    };
+    mostrarResultat(objeto);    
+}
 
-    function guardarJugador(){
-        
-    }
+function enviarPreguntes() {
+    fetch(`../back/finalitza.php`, {
+        method: "POST",
+        body: JSON.stringify(estatDeLaPartida),
+        headers: {
+            "Content-Type": "application/json",
+        },
+    })
+    .then(response => response.json())
+    .then(info => {
+        rebreRespostes(info);
+    });
+}
 
+function mostrarResultat(objeto){
+    const punt = document.getElementById("resultat");
+    let htmlString = '';
+    htmlString += `<h2> Total Respostes: ${objeto.totalRespostes} </h2>`;
+    htmlString += `<h2> Respostes Correctes: ${objeto.respostesCorrectes} </h2>`;
+    punt.innerHTML = htmlString;
+}
 
 
 //Comptador de temps
@@ -61,7 +61,9 @@ function comptadorTemps() {
     } else {
         tempsAcabat = true;
         alert("Temps esgotat");
-        finalitzarPartida(); //acabem el joc
+        clearInterval(temporitzador);
+        document.getElementById("partida").removeEventListener("click", botonsRespostes);
+        enviarPreguntes();
     }
 }
 
@@ -89,19 +91,17 @@ function mostrarPreguntes() {
     }
     
 }
-document.getElementById("partida").addEventListener("click", function(e) {
-    if (e.target.classList.contains("botoResposta")) {
-        const indexRes = e.target.getAttribute("resp");
-        const indexPreg = e.target.getAttribute("preg");
-        guardarRespostes(indexPreg, indexRes);
-    }
-});
-function guardarRespostes(iPreg, iRes) {
-    if (tempsAcabat) {
-        alert("Temps esgotat!");
-        return;
+document.getElementById("partida").addEventListener("click", botonsRespostes);   
+
+function botonsRespostes(e){    
+        if (e.target.classList.contains("botoResposta")) {
+            const indexRes = e.target.getAttribute("resp");
+            const indexPreg = e.target.getAttribute("preg");
+            guardarRespostes(indexPreg, indexRes);
+        }
     }
 
+function guardarRespostes(iPreg, iRes) {
     estatDeLaPartida[preguntaActual] = {
         pregunta: iPreg,
         resposta: iRes
@@ -111,15 +111,6 @@ function guardarRespostes(iPreg, iRes) {
         preguntaActual++;
         mostrarPreguntes();
         actualizarMarcador();
-    } else {
-        finalitzarPartida();
-    }
+    } 
 }
 
-function finalitzarPartida() {
-    const estatCrono = document.getElementById("estatPartida");
-    estatCrono.innerHTML += '<p>Test finalitzat!</p>';
-    clearInterval(temporitzador);
-    document.getElementById("partida").removeEventListener("click", guardarRespostes);
-    enviarPreguntes();
-}

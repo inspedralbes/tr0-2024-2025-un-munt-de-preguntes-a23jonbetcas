@@ -1,225 +1,334 @@
 {
 	"preguntes": [
-	  {
-		"id": 1,
-		"pregunta": "Quina marca de cotxes utilitza el lema 'Ultimate Driving Machine'?",
-		"respostes": [
-		  { "id": 1, "resposta": "BMW", "correcta": true },
-		  { "id": 2, "resposta": "Mercedes-Benz", "correcta": false },
-		  { "id": 3, "resposta": "Audi", "correcta": false },
-		  { "id": 4, "resposta": "Lexus", "correcta": false }
-		],
-		"imatge": "https://exemple.com/bmw.jpg"
-	  },
-	  {
-		"id": 2,
-		"pregunta": "Quina marca de mòbils utilitza el lema 'Think Different'?",
-		"respostes": [
-		  { "id": 1, "resposta": "Apple", "correcta": true },
-		  { "id": 2, "resposta": "Samsung", "correcta": false },
-		  { "id": 3, "resposta": "Nokia", "correcta": false },
-		  { "id": 4, "resposta": "Huawei", "correcta": false }
-		],
-		"imatge": "https://exemple.com/apple.jpg"
-	  },
-	  {
-		"id": 3,
-		"pregunta": "Quina marca de xocolata té el lema 'Unforgettable'?",
-		"respostes": [
-		  { "id": 1, "resposta": "Cadbury", "correcta": false },
-		  { "id": 2, "resposta": "Mars", "correcta": true },
-		  { "id": 3, "resposta": "Ferrero", "correcta": false },
-		  { "id": 4, "resposta": "Nestlé", "correcta": false }
-		],
-		"imatge": "https://exemple.com/mars.jpg"
-	  },
-	  {
-		"id": 4,
-		"pregunta": "Quina marca de roba utilitza el lema 'Just Do It'?",
-		"respostes": [
-		  { "id": 1, "resposta": "Nike", "correcta": true },
-		  { "id": 2, "resposta": "Adidas", "correcta": false },
-		  { "id": 3, "resposta": "Puma", "correcta": false },
-		  { "id": 4, "resposta": "Reebok", "correcta": false }
-		],
-		"imatge": "https://exemple.com/nike.jpg"
-	  },
-	  {
-		"id": 5,
-		"pregunta": "Quina marca de refrescos utilitza el lema 'Open Happiness'?",
-		"respostes": [
-		  { "id": 1, "resposta": "Pepsi", "correcta": false },
-		  { "id": 2, "resposta": "Coca-Cola", "correcta": true },
-		  { "id": 3, "resposta": "Fanta", "correcta": false },
-		  { "id": 4, "resposta": "Sprite", "correcta": false }
-		],
-		"imatge": "https://exemple.com/coca-cola.jpg"
-	  },
-	  {
-		"id": 6,
-		"pregunta": "Quina marca de videojocs utilitza el lema 'Live in Your World, Play in Ours'?",
-		"respostes": [
-		  { "id": 1, "resposta": "PlayStation", "correcta": true },
-		  { "id": 2, "resposta": "Xbox", "correcta": false },
-		  { "id": 3, "resposta": "Nintendo", "correcta": false },
-		  { "id": 4, "resposta": "Sega", "correcta": false }
-		],
-		"imatge": "https://exemple.com/playstation.jpg"
-	  },
-	  {
-		"id": 7,
-		"pregunta": "Quina marca de cafè utilitza el lema 'Good to the Last Drop'?",
-		"respostes": [
-		  { "id": 1, "resposta": "Folgers", "correcta": true },
-		  { "id": 2, "resposta": "Nescafé", "correcta": false },
-		  { "id": 3, "resposta": "Starbucks", "correcta": false },
-		  { "id": 4, "resposta": "Dunkin'", "correcta": false }
-		],
-		"imatge": "https://exemple.com/folgers.jpg"
-	  },
-	  {
-		"id": 8,
-		"pregunta": "Quina marca de vehicles utilitza el lema 'The Best or Nothing'?",
-		"respostes": [
-		  { "id": 1, "resposta": "Mercedes-Benz", "correcta": true },
-		  { "id": 2, "resposta": "BMW", "correcta": false },
-		  { "id": 3, "resposta": "Audi", "correcta": false },
-		  { "id": 4, "resposta": "Lexus", "correcta": false }
-		],
-		"imatge": "https://exemple.com/mercedes.jpg"
-	  },
-	  {
-		"id": 9,
-		"pregunta": "Quina marca de gelats utilitza el lema 'Irresistibly Delicious'?",
-		"respostes": [
-		  { "id": 1, "resposta": "Haagen-Dazs", "correcta": true },
-		  { "id": 2, "resposta": "Ben & Jerry's", "correcta": false },
-		  { "id": 3, "resposta": "Breyers", "correcta": false },
-		  { "id": 4, "resposta": "Dreyer's", "correcta": false }
-		],
-		"imatge": "https://exemple.com/haagen-dazs.jpg"
-	  },
-	  {
-		"id": 10,
-		"pregunta": "Quina marca de càmeres utilitza el lema 'Change the Way You See the World'?",
-		"respostes": [
-		  { "id": 1, "resposta": "Canon", "correcta": false },
-		  { "id": 2, "resposta": "Nikon", "correcta": false },
-		  { "id": 3, "resposta": "GoPro", "correcta": true },
-		  { "id": 4, "resposta": "Sony", "correcta": false }
-		],
-		"imatge": "https://exemple.com/gopro.jpg"
-	  },
-	  {
-		"id": 11,
-		"pregunta": "Quina marca de telèfons utilitza el lema 'Life's Good'?",
-		"respostes": [
-		  { "id": 1, "resposta": "LG", "correcta": true },
-		  { "id": 2, "resposta": "Samsung", "correcta": false },
-		  { "id": 3, "resposta": "HTC", "correcta": false },
-		  { "id": 4, "resposta": "Motorola", "correcta": false }
-		],
-		"imatge": "https://exemple.com/lg.jpg"
-	  },
-	  {
-		"id": 12,
-		"pregunta": "Quina marca de sabates utilitza el lema 'There is no finish line'?",
-		"respostes": [
-		  { "id": 1, "resposta": "Nike", "correcta": false },
-		  { "id": 2, "resposta": "Adidas", "correcta": true },
-		  { "id": 3, "resposta": "Reebok", "correcta": false },
-		  { "id": 4, "resposta": "Puma", "correcta": false }
-		],
-		"imatge": "https://exemple.com/adidas.jpg"
-	  },
-	  {
-		"id": 13,
-		"pregunta": "Quina marca de menjar ràpid utilitza el lema 'Have It Your Way'?",
-		"respostes": [
-		  { "id": 1, "resposta": "McDonald's", "correcta": false },
-		  { "id": 2, "resposta": "Burger King", "correcta": true },
-		  { "id": 3, "resposta": "Wendy's", "correcta": false },
-		  { "id": 4, "resposta": "KFC", "correcta": false }
-		],
-		"imatge": "https://exemple.com/burgerking.jpg"
-	  },
-	  {
-		"id": 14,
-		"pregunta": "Quina marca de cosmètics utilitza el lema 'Because You're Worth It'?",
-		"respostes": [
-		  { "id": 1, "resposta": "L'Oreal", "correcta": true },
-		  { "id": 2, "resposta": "Maybelline", "correcta": false },
-		  { "id": 3, "resposta": "Revlon", "correcta": false },
-		  { "id": 4, "resposta": "Estée Lauder", "correcta": false }
-		],
-		"imatge": "https://exemple.com/loreal.jpg"
-	  },
-	  {
-		"id": 15,
-		"pregunta": "Quina marca de xampú utilitza el lema 'Strong is Beautiful'?",
-		"respostes": [
-		  { "id": 1, "resposta": "Pantene", "correcta": true },
-		  { "id": 2, "resposta": "Head & Shoulders", "correcta": false },
-		  { "id": 3, "resposta": "Dove", "correcta": false },
-		  { "id": 4, "resposta": "Tresemmé", "correcta": false }
-		],
-		"imatge": "https://exemple.com/pantene.jpg"
-	  },
-	  {
-		"id": 16,
-		"pregunta": "Quina marca de tè utilitza el lema 'The Tea of a Thousand Flavors'?",
-		"respostes": [
-		  { "id": 1, "resposta": "Lipton", "correcta": true },
-		  { "id": 2, "resposta": "Twinings", "correcta": false },
-		  { "id": 3, "resposta": "Dilmah", "correcta": false },
-		  { "id": 4, "resposta": "Celestial Seasonings", "correcta": false }
-		],
-		"imatge": "https://exemple.com/lipton.jpg"
-	  },
-	  {
-		"id": 17,
-		"pregunta": "Quina marca de xampany utilitza el lema 'For the Good Times'?",
-		"respostes": [
-		  { "id": 1, "resposta": "Moët & Chandon", "correcta": true },
-		  { "id": 2, "resposta": "Veuve Clicquot", "correcta": false },
-		  { "id": 3, "resposta": "Dom Pérignon", "correcta": false },
-		  { "id": 4, "resposta": "Cristal", "correcta": false }
-		],
-		"imatge": "https://exemple.com/moet.jpg"
-	  },
-	  {
-		"id": 18,
-		"pregunta": "Quina marca de videojocs utilitza el lema 'It's in the Game'?",
-		"respostes": [
-		  { "id": 1, "resposta": "EA Sports", "correcta": true },
-		  { "id": 2, "resposta": "Activision", "correcta": false },
-		  { "id": 3, "resposta": "Ubisoft", "correcta": false },
-		  { "id": 4, "resposta": "Bethesda", "correcta": false }
-		],
-		"imatge": "https://exemple.com/easports.jpg"
-	  },
-	  {
-		"id": 19,
-		"pregunta": "Quina marca de joguines utilitza el lema 'Play-Doh, The Fun Factory'?",
-		"respostes": [
-		  { "id": 1, "resposta": "Play-Doh", "correcta": true },
-		  { "id": 2, "resposta": "LEGO", "correcta": false },
-		  { "id": 3, "resposta": "Fisher-Price", "correcta": false },
-		  { "id": 4, "resposta": "Mattel", "correcta": false }
-		],
-		"imatge": "https://exemple.com/play-doh.jpg"
-	  },
-	  {
-		"id": 20,
-		"pregunta": "Quina marca de perfums utilitza el lema 'The One'?",
-		"respostes": [
-		  { "id": 1, "resposta": "Dolce & Gabbana", "correcta": true },
-		  { "id": 2, "resposta": "Chanel", "correcta": false },
-		  { "id": 3, "resposta": "Gucci", "correcta": false },
-		  { "id": 4, "resposta": "Versace", "correcta": false }
-		],
-		"imatge": "https://exemple.com/dolce.jpg"
-	  }
+		{
+			"id": 1,
+			"pregunta": "Quina marca de xocolata utilitza el lema 'Taste the Rainbow'?",
+			"respostes": [
+				{ "id": 1, "resposta": "Skittles", "correcta": true },
+				{ "id": 2, "resposta": "M&M's", "correcta": false },
+				{ "id": 3, "resposta": "Cadbury", "correcta": false },
+				{ "id": 4, "resposta": "Mars", "correcta": false }
+			],
+			"imatge": "https://exemple.com/skittles.jpg"
+		},
+		{
+			"id": 2,
+			"pregunta": "Quina fruita és coneguda per ser vermella i rodona?",
+			"respostes": [
+				{ "id": 1, "resposta": "Poma", "correcta": true },
+				{ "id": 2, "resposta": "Plàtan", "correcta": false },
+				{ "id": 3, "resposta": "Naranja", "correcta": false },
+				{ "id": 4, "resposta": "Kiwi", "correcta": false }
+			],
+			"imatge": "https://exemple.com/poma.jpg"
+		},
+		{
+			"id": 3,
+			"pregunta": "Quina marca de refrescos és famosa pel seu logotip vermell i blanc?",
+			"respostes": [
+				{ "id": 1, "resposta": "Coca-Cola", "correcta": true },
+				{ "id": 2, "resposta": "Pepsi", "correcta": false },
+				{ "id": 3, "resposta": "Fanta", "correcta": false },
+				{ "id": 4, "resposta": "Sprite", "correcta": false }
+			],
+			"imatge": "https://exemple.com/cocacola.jpg"
+		},
+		{
+			"id": 4,
+			"pregunta": "Quina mascota és associada amb la marca de cereals 'Frosted Flakes'?",
+			"respostes": [
+				{ "id": 1, "resposta": "Tony el Tigre", "correcta": true },
+				{ "id": 2, "resposta": "Toucan Sam", "correcta": false },
+				{ "id": 3, "resposta": "Lucky the Leprechaun", "correcta": false },
+				{ "id": 4, "resposta": "Snap, Crackle and Pop", "correcta": false }
+			],
+			"imatge": "https://exemple.com/tonytigre.jpg"
+		},
+		{
+			"id": 5,
+			"pregunta": "Quin animal és conegut per dir 'miau'?",
+			"respostes": [
+				{ "id": 1, "resposta": "Gat", "correcta": true },
+				{ "id": 2, "resposta": "Gos", "correcta": false },
+				{ "id": 3, "resposta": "Ocell", "correcta": false },
+				{ "id": 4, "resposta": "Peix", "correcta": false }
+			],
+			"imatge": "https://exemple.com/gat.jpg"
+		},
+		{
+			"id": 6,
+			"pregunta": "Quin instrument musical té cordes i es toca amb un arc?",
+			"respostes": [
+				{ "id": 1, "resposta": "Violí", "correcta": true },
+				{ "id": 2, "resposta": "Piano", "correcta": false },
+				{ "id": 3, "resposta": "Bateria", "correcta": false },
+				{ "id": 4, "resposta": "Saxòfon", "correcta": false }
+			],
+			"imatge": "https://exemple.com/violi.jpg"
+		},
+		{
+			"id": 7,
+			"pregunta": "Quina és la capital d'Espanya?",
+			"respostes": [
+				{ "id": 1, "resposta": "Madrid", "correcta": true },
+				{ "id": 2, "resposta": "Barcelona", "correcta": false },
+				{ "id": 3, "resposta": "València", "correcta": false },
+				{ "id": 4, "resposta": "Sevilla", "correcta": false }
+			],
+			"imatge": "https://exemple.com/madrid.jpg"
+		},
+		{
+			"id": 8,
+			"pregunta": "Quin tipus de peix és conegut per ser fumat i servir en bagels?",
+			"respostes": [
+				{ "id": 1, "resposta": "Salmó", "correcta": true },
+				{ "id": 2, "resposta": "Tonyina", "correcta": false },
+				{ "id": 3, "resposta": "Bacallà", "correcta": false },
+				{ "id": 4, "resposta": "Sardina", "correcta": false }
+			],
+			"imatge": "https://exemple.com/salmo.jpg"
+		},
+		{
+			"id": 9,
+			"pregunta": "Quin és el continent més gran del món?",
+			"respostes": [
+				{ "id": 1, "resposta": "Àsia", "correcta": true },
+				{ "id": 2, "resposta": "Àfrica", "correcta": false },
+				{ "id": 3, "resposta": "Amèrica", "correcta": false },
+				{ "id": 4, "resposta": "Europa", "correcta": false }
+			],
+			"imatge": "https://exemple.com/asia.jpg"
+		},
+		{
+			"id": 10,
+			"pregunta": "Quina és la unitat bàsica de la vida?",
+			"respostes": [
+				{ "id": 1, "resposta": "Cèl·lula", "correcta": true },
+				{ "id": 2, "resposta": "Teixit", "correcta": false },
+				{ "id": 3, "resposta": "Òrgan", "correcta": false },
+				{ "id": 4, "resposta": "Organisme", "correcta": false }
+			],
+			"imatge": "https://exemple.com/celula.jpg"
+		},
+		{
+			"id": 11,
+			"pregunta": "Quin color resulta de la barreja de blau i groc?",
+			"respostes": [
+				{ "id": 1, "resposta": "Verd", "correcta": true },
+				{ "id": 2, "resposta": "Naranja", "correcta": false },
+				{ "id": 3, "resposta": "Vermell", "correcta": false },
+				{ "id": 4, "resposta": "Violet", "correcta": false }
+			],
+			"imatge": "https://exemple.com/verd.jpg"
+		},
+		{
+			"id": 12,
+			"pregunta": "Quin és el mamífer marí més gran?",
+			"respostes": [
+				{ "id": 1, "resposta": "Baleia", "correcta": true },
+				{ "id": 2, "resposta": "Dofí", "correcta": false },
+				{ "id": 3, "resposta": "Tortuga", "correcta": false },
+				{ "id": 4, "resposta": "Foca", "correcta": false }
+			],
+			"imatge": "https://exemple.com/baleia.jpg"
+		},
+		{
+			"id": 13,
+			"pregunta": "Quin és el nom del planetari més pròxim al Sol?",
+			"respostes": [
+				{ "id": 1, "resposta": "Mercuri", "correcta": true },
+				{ "id": 2, "resposta": "Venus", "correcta": false },
+				{ "id": 3, "resposta": "Terra", "correcta": false },
+				{ "id": 4, "resposta": "Marte", "correcta": false }
+			],
+			"imatge": "https://exemple.com/mercuri.jpg"
+		},
+		{
+			"id": 14,
+			"pregunta": "Quin tipus de menjar és la pizza?",
+			"respostes": [
+				{ "id": 1, "resposta": "Italià", "correcta": true },
+				{ "id": 2, "resposta": "Mexicà", "correcta": false },
+				{ "id": 3, "resposta": "Francès", "correcta": false },
+				{ "id": 4, "resposta": "Espanyol", "correcta": false }
+			],
+			"imatge": "https://exemple.com/pizza.jpg"
+		},
+		{
+			"id": 15,
+			"pregunta": "Quin esport es practica sobre gel?",
+			"respostes": [
+				{ "id": 1, "resposta": "Hòckey", "correcta": true },
+				{ "id": 2, "resposta": "Futbol", "correcta": false },
+				{ "id": 3, "resposta": "Basquet", "correcta": false },
+				{ "id": 4, "resposta": "Tennis", "correcta": false }
+			],
+			"imatge": "https://exemple.com/hockey.jpg"
+		},
+		{
+			"id": 16,
+			"pregunta": "Quin vehicle és conegut per volar?",
+			"respostes": [
+				{ "id": 1, "resposta": "Avió", "correcta": true },
+				{ "id": 2, "resposta": "Cotxe", "correcta": false },
+				{ "id": 3, "resposta": "Bicicleta", "correcta": false },
+				{ "id": 4, "resposta": "Vaixell", "correcta": false }
+			],
+			"imatge": "https://exemple.com/avio.jpg"
+		},
+		{
+			"id": 17,
+			"pregunta": "Quin és el color del sol?",
+			"respostes": [
+				{ "id": 1, "resposta": "Groc", "correcta": true },
+				{ "id": 2, "resposta": "Blau", "correcta": false },
+				{ "id": 3, "resposta": "Vermell", "correcta": false },
+				{ "id": 4, "resposta": "Verd", "correcta": false }
+			],
+			"imatge": "https://exemple.com/groc.jpg"
+		},
+		{
+			"id": 18,
+			"pregunta": "Quin és l'animal nacional d'Austràlia?",
+			"respostes": [
+				{ "id": 1, "resposta": "Cangur", "correcta": true },
+				{ "id": 2, "resposta": "Koala", "correcta": false },
+				{ "id": 3, "resposta": "Emú", "correcta": false },
+				{ "id": 4, "resposta": "Cocodril", "correcta": false }
+			],
+			"imatge": "https://exemple.com/cangur.jpg"
+		},
+		{
+			"id": 19,
+			"pregunta": "Quin tipus de màquina és una 'cafetera'?",
+			"respostes": [
+				{ "id": 1, "resposta": "Electrodomèstic", "correcta": true },
+				{ "id": 2, "resposta": "Instrument musical", "correcta": false },
+				{ "id": 3, "resposta": "Maquinària", "correcta": false },
+				{ "id": 4, "resposta": "Dispositiu electrònic", "correcta": false }
+			],
+			"imatge": "https://exemple.com/cafetera.jpg"
+		},
+		{
+			"id": 20,
+			"pregunta": "Quin tipus de formatge és el 'Parmesà'?",
+			"respostes": [
+				{ "id": 1, "resposta": "Dur", "correcta": true },
+				{ "id": 2, "resposta": "Blanc", "correcta": false },
+				{ "id": 3, "resposta": "Suau", "correcta": false },
+				{ "id": 4, "resposta": "Fluït", "correcta": false }
+			],
+			"imatge": "https://exemple.com/parmesà.jpg"
+		},
+		{
+			"id": 21,
+			"pregunta": "Quina és la llengua oficial de Brasil?",
+			"respostes": [
+				{ "id": 1, "resposta": "Portuguès", "correcta": true },
+				{ "id": 2, "resposta": "Espanyol", "correcta": false },
+				{ "id": 3, "resposta": "Francès", "correcta": false },
+				{ "id": 4, "resposta": "Anglès", "correcta": false }
+			],
+			"imatge": "https://exemple.com/brasil.jpg"
+		},
+		{
+			"id": 22,
+			"pregunta": "Quin és l'últim mes de l'any?",
+			"respostes": [
+				{ "id": 1, "resposta": "Desembre", "correcta": true },
+				{ "id": 2, "resposta": "Novembre", "correcta": false },
+				{ "id": 3, "resposta": "Octubre", "correcta": false },
+				{ "id": 4, "resposta": "Gener", "correcta": false }
+			],
+			"imatge": "https://exemple.com/desembre.jpg"
+		},
+		{
+			"id": 23,
+			"pregunta": "Quina és la capital de França?",
+			"respostes": [
+				{ "id": 1, "resposta": "París", "correcta": true },
+				{ "id": 2, "resposta": "Londres", "correcta": false },
+				{ "id": 3, "resposta": "Berlín", "correcta": false },
+				{ "id": 4, "resposta": "Roma", "correcta": false }
+			],
+			"imatge": "https://exemple.com/paris.jpg"
+		},
+		{
+			"id": 24,
+			"pregunta": "Quin dia de la setmana ve després de divendres?",
+			"respostes": [
+				{ "id": 1, "resposta": "Dissabte", "correcta": true },
+				{ "id": 2, "resposta": "Diumenge", "correcta": false },
+				{ "id": 3, "resposta": "Divendres", "correcta": false },
+				{ "id": 4, "resposta": "Dilluns", "correcta": false }
+			],
+			"imatge": "https://exemple.com/dissabte.jpg"
+		},
+		{
+			"id": 25,
+			"pregunta": "Quina és la capital de Japó?",
+			"respostes": [
+				{ "id": 1, "resposta": "Tòquio", "correcta": true },
+				{ "id": 2, "resposta": "Osaka", "correcta": false },
+				{ "id": 3, "resposta": "Kyoto", "correcta": false },
+				{ "id": 4, "resposta": "Hiroshima", "correcta": false }
+			],
+			"imatge": "https://exemple.com/toquio.jpg"
+		},
+		{
+			"id": 26,
+			"pregunta": "Quin tipus de peix és el sushi?",
+			"respostes": [
+				{ "id": 1, "resposta": "Peix cru", "correcta": true },
+				{ "id": 2, "resposta": "Peix cuit", "correcta": false },
+				{ "id": 3, "resposta": "Peix fumat", "correcta": false },
+				{ "id": 4, "resposta": "Peix enllaunat", "correcta": false }
+			],
+			"imatge": "https://exemple.com/sushi.jpg"
+		},
+		{
+			"id": 27,
+			"pregunta": "Quina planta és coneguda per les seves flors blaves i blanques?",
+			"respostes": [
+				{ "id": 1, "resposta": "Nerines", "correcta": false },
+				{ "id": 2, "resposta": "Margarides", "correcta": false },
+				{ "id": 3, "resposta": "Hortènsies", "correcta": true },
+				{ "id": 4, "resposta": "Roses", "correcta": false }
+			],
+			"imatge": "https://exemple.com/hortensies.jpg"
+		},
+		{
+			"id": 28,
+			"pregunta": "Quina és la unitat de mesura de la temperatura?",
+			"respostes": [
+				{ "id": 1, "resposta": "Grau Celsius", "correcta": true },
+				{ "id": 2, "resposta": "Metre", "correcta": false },
+				{ "id": 3, "resposta": "Litre", "correcta": false },
+				{ "id": 4, "resposta": "Quilogram", "correcta": false }
+			],
+			"imatge": "https://exemple.com/temperatura.jpg"
+		},
+		{
+			"id": 29,
+			"pregunta": "Quina és la capital d'Itàlia?",
+			"respostes": [
+				{ "id": 1, "resposta": "Roma", "correcta": true },
+				{ "id": 2, "resposta": "Milà", "correcta": false },
+				{ "id": 3, "resposta": "Nàpols", "correcta": false },
+				{ "id": 4, "resposta": "Torí", "correcta": false }
+			],
+			"imatge": "https://exemple.com/roma.jpg"
+		},
+		{
+			"id": 30,
+			"pregunta": "Quina és la moneda oficial dels Estats Units?",
+			"respostes": [
+				{ "id": 1, "resposta": "Dòlar", "correcta": true },
+				{ "id": 2, "resposta": "Euro", "correcta": false },
+				{ "id": 3, "resposta": "Ien", "correcta": false },
+				{ "id": 4, "resposta": "Pound", "correcta": false }
+			],
+			"imatge": "https://exemple.com/dolar.jpg"
+		}
 	]
-  }
-  
+}
