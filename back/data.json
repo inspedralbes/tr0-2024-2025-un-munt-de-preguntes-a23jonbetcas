@@ -2,314 +2,193 @@
 	"preguntes": [
 		{
 			"id": 1,
-			"pregunta": "Quina marca de xocolata utilitza el lema 'Taste the Rainbow'?",
+			"pregunta": "Quin és el planeta més gran del sistema solar?",
 			"respostes": [
-				{ "id": 1, "resposta": "Skittles", "correcta": true },
-				{ "id": 2, "resposta": "M&M's", "correcta": false },
-				{ "id": 3, "resposta": "Cadbury", "correcta": false },
-				{ "id": 4, "resposta": "Mars", "correcta": false }
+				{ "id": 1, "resposta": "Júpiter", "correcta": true },
+				{ "id": 2, "resposta": "Terra", "correcta": false },
+				{ "id": 3, "resposta": "Mart", "correcta": false },
+				{ "id": 4, "resposta": "Saturn", "correcta": false }
 			],
-			"imatge": "https://exemple.com/skittles.jpg"
+			"imatge": "https://images.unsplash.com/photo-1513998920758-05c4e4e9b5b8"
 		},
 		{
 			"id": 2,
-			"pregunta": "Quina fruita és coneguda per ser vermella i rodona?",
+			"pregunta": "Quin és l'element químic més abundant a l'univers?",
 			"respostes": [
-				{ "id": 1, "resposta": "Poma", "correcta": true },
-				{ "id": 2, "resposta": "Plàtan", "correcta": false },
-				{ "id": 3, "resposta": "Naranja", "correcta": false },
-				{ "id": 4, "resposta": "Kiwi", "correcta": false }
+				{ "id": 1, "resposta": "Heli", "correcta": false },
+				{ "id": 2, "resposta": "Oxigen", "correcta": false },
+				{ "id": 3, "resposta": "Hidrogen", "correcta": true },
+				{ "id": 4, "resposta": "Carboni", "correcta": false }
 			],
-			"imatge": "https://exemple.com/poma.jpg"
+			"imatge": "https://images.unsplash.com/photo-1604692946480-0c4f00897c48"
 		},
 		{
 			"id": 3,
-			"pregunta": "Quina marca de refrescos és famosa pel seu logotip vermell i blanc?",
+			"pregunta": "Quina és la capital d'Espanya?",
 			"respostes": [
-				{ "id": 1, "resposta": "Coca-Cola", "correcta": true },
-				{ "id": 2, "resposta": "Pepsi", "correcta": false },
-				{ "id": 3, "resposta": "Fanta", "correcta": false },
-				{ "id": 4, "resposta": "Sprite", "correcta": false }
+				{ "id": 1, "resposta": "València", "correcta": false },
+				{ "id": 2, "resposta": "Sevilla", "correcta": false },
+				{ "id": 3, "resposta": "Madrid", "correcta": true },
+				{ "id": 4, "resposta": "Barcelona", "correcta": false }
 			],
-			"imatge": "https://exemple.com/cocacola.jpg"
+			"imatge": "https://images.unsplash.com/photo-1586484671196-b75f01c5a7c8"
 		},
 		{
 			"id": 4,
-			"pregunta": "Quina mascota és associada amb la marca de cereals 'Frosted Flakes'?",
+			"pregunta": "Quin és el llenguatge de programació més utilitzat per a desenvolupament web?",
 			"respostes": [
-				{ "id": 1, "resposta": "Tony el Tigre", "correcta": true },
-				{ "id": 2, "resposta": "Toucan Sam", "correcta": false },
-				{ "id": 3, "resposta": "Lucky the Leprechaun", "correcta": false },
-				{ "id": 4, "resposta": "Snap, Crackle and Pop", "correcta": false }
+				{ "id": 1, "resposta": "Java", "correcta": false },
+				{ "id": 2, "resposta": "Python", "correcta": false },
+				{ "id": 3, "resposta": "C++", "correcta": false },
+				{ "id": 4, "resposta": "JavaScript", "correcta": true }
 			],
-			"imatge": "https://exemple.com/tonytigre.jpg"
+			"imatge": "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0"
 		},
 		{
 			"id": 5,
-			"pregunta": "Quin animal és conegut per dir 'miau'?",
+			"pregunta": "Quin és el continent més petit del món?",
 			"respostes": [
-				{ "id": 1, "resposta": "Gat", "correcta": true },
-				{ "id": 2, "resposta": "Gos", "correcta": false },
-				{ "id": 3, "resposta": "Ocell", "correcta": false },
-				{ "id": 4, "resposta": "Peix", "correcta": false }
+				{ "id": 1, "resposta": "Oceania", "correcta": false },
+				{ "id": 2, "resposta": "Antàrtida", "correcta": true },
+				{ "id": 3, "resposta": "Àsia", "correcta": false },
+				{ "id": 4, "resposta": "Europa", "correcta": false }
 			],
-			"imatge": "https://exemple.com/gat.jpg"
+			"imatge": "https://images.unsplash.com/photo-1541360857859-c1658476b06b"
 		},
 		{
 			"id": 6,
-			"pregunta": "Quin instrument musical té cordes i es toca amb un arc?",
+			"pregunta": "Quin és el mamífer més petit del món?",
 			"respostes": [
-				{ "id": 1, "resposta": "Violí", "correcta": true },
-				{ "id": 2, "resposta": "Piano", "correcta": false },
-				{ "id": 3, "resposta": "Bateria", "correcta": false },
-				{ "id": 4, "resposta": "Saxòfon", "correcta": false }
+				{ "id": 1, "resposta": "Colibrí", "correcta": false },
+				{ "id": 2, "resposta": "Ratolí de camp", "correcta": false },
+				{ "id": 3, "resposta": "Musaranya pigmeu", "correcta": true },
+				{ "id": 4, "resposta": "Ratolí", "correcta": false }
 			],
-			"imatge": "https://exemple.com/violi.jpg"
+			"imatge": "https://images.unsplash.com/photo-1556191556-60f963e9c014"
 		},
 		{
 			"id": 7,
-			"pregunta": "Quina és la capital d'Espanya?",
+			"pregunta": "Quin és l'únic mamífer que pot volar?",
 			"respostes": [
-				{ "id": 1, "resposta": "Madrid", "correcta": true },
-				{ "id": 2, "resposta": "Barcelona", "correcta": false },
-				{ "id": 3, "resposta": "València", "correcta": false },
-				{ "id": 4, "resposta": "Sevilla", "correcta": false }
+				{ "id": 1, "resposta": "Òliba", "correcta": false },
+				{ "id": 2, "resposta": "Cigne", "correcta": false },
+				{ "id": 3, "resposta": "Sòfoc", "correcta": false },
+				{ "id": 4, "resposta": "Morcego", "correcta": true }
 			],
-			"imatge": "https://exemple.com/madrid.jpg"
+			"imatge": "https://images.unsplash.com/photo-1574158622682-6e8ed84ac64e"
 		},
 		{
 			"id": 8,
-			"pregunta": "Quin tipus de peix és conegut per ser fumat i servir en bagels?",
+			"pregunta": "Quin és el planeta conegut com 'el planeta blau'?",
 			"respostes": [
-				{ "id": 1, "resposta": "Salmó", "correcta": true },
-				{ "id": 2, "resposta": "Tonyina", "correcta": false },
-				{ "id": 3, "resposta": "Bacallà", "correcta": false },
-				{ "id": 4, "resposta": "Sardina", "correcta": false }
+				{ "id": 1, "resposta": "Júpiter", "correcta": false },
+				{ "id": 2, "resposta": "Neptú", "correcta": false },
+				{ "id": 3, "resposta": "Terra", "correcta": true },
+				{ "id": 4, "resposta": "Mart", "correcta": false }
 			],
-			"imatge": "https://exemple.com/salmo.jpg"
+			"imatge": "https://images.unsplash.com/photo-1566079739262-4cf6a8f4e1e8"
 		},
 		{
 			"id": 9,
-			"pregunta": "Quin és el continent més gran del món?",
+			"pregunta": "Quina és la capital de França?",
 			"respostes": [
-				{ "id": 1, "resposta": "Àsia", "correcta": true },
-				{ "id": 2, "resposta": "Àfrica", "correcta": false },
-				{ "id": 3, "resposta": "Amèrica", "correcta": false },
-				{ "id": 4, "resposta": "Europa", "correcta": false }
+				{ "id": 1, "resposta": "Londres", "correcta": false },
+				{ "id": 2, "resposta": "Berlín", "correcta": false },
+				{ "id": 3, "resposta": "Madrid", "correcta": false },
+				{ "id": 4, "resposta": "París", "correcta": true }
 			],
-			"imatge": "https://exemple.com/asia.jpg"
+			"imatge": "https://images.unsplash.com/photo-1589505003037-50835c18a1f4"
 		},
 		{
 			"id": 10,
-			"pregunta": "Quina és la unitat bàsica de la vida?",
+			"pregunta": "Quin és l'animal més gran del món?",
 			"respostes": [
-				{ "id": 1, "resposta": "Cèl·lula", "correcta": true },
-				{ "id": 2, "resposta": "Teixit", "correcta": false },
-				{ "id": 3, "resposta": "Òrgan", "correcta": false },
-				{ "id": 4, "resposta": "Organisme", "correcta": false }
+				{ "id": 1, "resposta": "Rinoceront", "correcta": false },
+				{ "id": 2, "resposta": "Giraffa", "correcta": false },
+				{ "id": 3, "resposta": "Elefant africà", "correcta": false },
+				{ "id": 4, "resposta": "Balena blava", "correcta": true }
 			],
-			"imatge": "https://exemple.com/celula.jpg"
+			"imatge": "https://images.unsplash.com/photo-1544005313-1c14h3g8j8a8"
 		},
 		{
 			"id": 11,
-			"pregunta": "Quin color resulta de la barreja de blau i groc?",
+			"pregunta": "Quin planeta és conegut com el planeta vermell?",
 			"respostes": [
-				{ "id": 1, "resposta": "Verd", "correcta": true },
-				{ "id": 2, "resposta": "Naranja", "correcta": false },
-				{ "id": 3, "resposta": "Vermell", "correcta": false },
-				{ "id": 4, "resposta": "Violet", "correcta": false }
+				{ "id": 1, "resposta": "Venus", "correcta": false },
+				{ "id": 2, "resposta": "Júpiter", "correcta": false },
+				{ "id": 3, "resposta": "Saturn", "correcta": false },
+				{ "id": 4, "resposta": "Mart", "correcta": true }
 			],
-			"imatge": "https://exemple.com/verd.jpg"
+			"imatge": "https://images.unsplash.com/photo-1593990162387-b9d8e6a10462"
 		},
 		{
 			"id": 12,
-			"pregunta": "Quin és el mamífer marí més gran?",
+			"pregunta": "Quin és el metall més abundant a la Terra?",
 			"respostes": [
-				{ "id": 1, "resposta": "Baleia", "correcta": true },
-				{ "id": 2, "resposta": "Dofí", "correcta": false },
-				{ "id": 3, "resposta": "Tortuga", "correcta": false },
-				{ "id": 4, "resposta": "Foca", "correcta": false }
+				{ "id": 1, "resposta": "Coure", "correcta": false },
+				{ "id": 2, "resposta": "Alumini", "correcta": false },
+				{ "id": 3, "resposta": "Ferro", "correcta": true },
+				{ "id": 4, "resposta": "Plom", "correcta": false }
 			],
-			"imatge": "https://exemple.com/baleia.jpg"
+			"imatge": "https://images.unsplash.com/photo-1526481280694-3e1342f17a7e"
 		},
 		{
 			"id": 13,
-			"pregunta": "Quin és el nom del planetari més pròxim al Sol?",
+			"pregunta": "Quin és el país més gran del món?",
 			"respostes": [
-				{ "id": 1, "resposta": "Mercuri", "correcta": true },
-				{ "id": 2, "resposta": "Venus", "correcta": false },
-				{ "id": 3, "resposta": "Terra", "correcta": false },
-				{ "id": 4, "resposta": "Marte", "correcta": false }
+				{ "id": 1, "resposta": "Estats Units", "correcta": false },
+				{ "id": 2, "resposta": "Xina", "correcta": false },
+				{ "id": 3, "resposta": "Rússia", "correcta": true },
+				{ "id": 4, "resposta": "Canadà", "correcta": false }
 			],
-			"imatge": "https://exemple.com/mercuri.jpg"
+			"imatge": "https://images.unsplash.com/photo-1533051616824-769fd165f9b7"
 		},
 		{
 			"id": 14,
-			"pregunta": "Quin tipus de menjar és la pizza?",
+			"pregunta": "Quina és la llengua més parlada al món?",
 			"respostes": [
-				{ "id": 1, "resposta": "Italià", "correcta": true },
-				{ "id": 2, "resposta": "Mexicà", "correcta": false },
-				{ "id": 3, "resposta": "Francès", "correcta": false },
-				{ "id": 4, "resposta": "Espanyol", "correcta": false }
+				{ "id": 1, "resposta": "Espanyol", "correcta": false },
+				{ "id": 2, "resposta": "Mandarí", "correcta": true },
+				{ "id": 3, "resposta": "Anglès", "correcta": false },
+				{ "id": 4, "resposta": "Àrab", "correcta": false }
 			],
-			"imatge": "https://exemple.com/pizza.jpg"
+			"imatge": "https://images.unsplash.com/photo-1501232701533-76ef60cdabef"
 		},
 		{
 			"id": 15,
-			"pregunta": "Quin esport es practica sobre gel?",
+			"pregunta": "Quin és el símbol químic de l'aigua?",
 			"respostes": [
-				{ "id": 1, "resposta": "Hòckey", "correcta": true },
-				{ "id": 2, "resposta": "Futbol", "correcta": false },
-				{ "id": 3, "resposta": "Basquet", "correcta": false },
-				{ "id": 4, "resposta": "Tennis", "correcta": false }
+				{ "id": 1, "resposta": "H2O", "correcta": true },
+				{ "id": 2, "resposta": "CO2", "correcta": false },
+				{ "id": 3, "resposta": "O2", "correcta": false },
+				{ "id": 4, "resposta": "H2", "correcta": false }
 			],
-			"imatge": "https://exemple.com/hockey.jpg"
+			"imatge": "https://images.unsplash.com/photo-1555940492-c38f6c7c9f32"
 		},
 		{
 			"id": 16,
-			"pregunta": "Quin vehicle és conegut per volar?",
+			"pregunta": "Quin és el llibre més venut de la història?",
 			"respostes": [
-				{ "id": 1, "resposta": "Avió", "correcta": true },
-				{ "id": 2, "resposta": "Cotxe", "correcta": false },
-				{ "id": 3, "resposta": "Bicicleta", "correcta": false },
-				{ "id": 4, "resposta": "Vaixell", "correcta": false }
+				{ "id": 1, "resposta": "El Senyor dels Anells", "correcta": false },
+				{ "id": 2, "resposta": "La Bíblia", "correcta": true },
+				{ "id": 3, "resposta": "Harry Potter", "correcta": false },
+				{ "id": 4, "resposta": "Don Quixot", "correcta": false }
 			],
-			"imatge": "https://exemple.com/avio.jpg"
+			"imatge": "https://images.unsplash.com/photo-1586644219717-e61f54ef2b85"
 		},
 		{
 			"id": 17,
-			"pregunta": "Quin és el color del sol?",
+			"pregunta": "Quin és l'element químic que té el símbol Fe?",
 			"respostes": [
-				{ "id": 1, "resposta": "Groc", "correcta": true },
-				{ "id": 2, "resposta": "Blau", "correcta": false },
-				{ "id": 3, "resposta": "Vermell", "correcta": false },
-				{ "id": 4, "resposta": "Verd", "correcta": false }
+				{ "id": 1, "resposta": "Ferro", "correcta": true },
+				{ "id": 2, "resposta": "Plom", "correcta": false },
+				{ "id": 3, "resposta": "Zinc", "correcta": false },
+				{ "id": 4, "resposta": "Mercuri", "correcta": false }
 			],
-			"imatge": "https://exemple.com/groc.jpg"
+			"imatge": "https://images.unsplash.com/photo-1576233221662-9bc85cf58c68"
 		},
 		{
 			"id": 18,
-			"pregunta": "Quin és l'animal nacional d'Austràlia?",
-			"respostes": [
-				{ "id": 1, "resposta": "Cangur", "correcta": true },
-				{ "id": 2, "resposta": "Koala", "correcta": false },
-				{ "id": 3, "resposta": "Emú", "correcta": false },
-				{ "id": 4, "resposta": "Cocodril", "correcta": false }
-			],
-			"imatge": "https://exemple.com/cangur.jpg"
-		},
-		{
-			"id": 19,
-			"pregunta": "Quin tipus de màquina és una 'cafetera'?",
-			"respostes": [
-				{ "id": 1, "resposta": "Electrodomèstic", "correcta": true },
-				{ "id": 2, "resposta": "Instrument musical", "correcta": false },
-				{ "id": 3, "resposta": "Maquinària", "correcta": false },
-				{ "id": 4, "resposta": "Dispositiu electrònic", "correcta": false }
-			],
-			"imatge": "https://exemple.com/cafetera.jpg"
-		},
-		{
-			"id": 20,
-			"pregunta": "Quin tipus de formatge és el 'Parmesà'?",
-			"respostes": [
-				{ "id": 1, "resposta": "Dur", "correcta": true },
-				{ "id": 2, "resposta": "Blanc", "correcta": false },
-				{ "id": 3, "resposta": "Suau", "correcta": false },
-				{ "id": 4, "resposta": "Fluït", "correcta": false }
-			],
-			"imatge": "https://exemple.com/parmesà.jpg"
-		},
-		{
-			"id": 21,
-			"pregunta": "Quina és la llengua oficial de Brasil?",
-			"respostes": [
-				{ "id": 1, "resposta": "Portuguès", "correcta": true },
-				{ "id": 2, "resposta": "Espanyol", "correcta": false },
-				{ "id": 3, "resposta": "Francès", "correcta": false },
-				{ "id": 4, "resposta": "Anglès", "correcta": false }
-			],
-			"imatge": "https://exemple.com/brasil.jpg"
-		},
-		{
-			"id": 22,
-			"pregunta": "Quin és l'últim mes de l'any?",
-			"respostes": [
-				{ "id": 1, "resposta": "Desembre", "correcta": true },
-				{ "id": 2, "resposta": "Novembre", "correcta": false },
-				{ "id": 3, "resposta": "Octubre", "correcta": false },
-				{ "id": 4, "resposta": "Gener", "correcta": false }
-			],
-			"imatge": "https://exemple.com/desembre.jpg"
-		},
-		{
-			"id": 23,
-			"pregunta": "Quina és la capital de França?",
-			"respostes": [
-				{ "id": 1, "resposta": "París", "correcta": true },
-				{ "id": 2, "resposta": "Londres", "correcta": false },
-				{ "id": 3, "resposta": "Berlín", "correcta": false },
-				{ "id": 4, "resposta": "Roma", "correcta": false }
-			],
-			"imatge": "https://exemple.com/paris.jpg"
-		},
-		{
-			"id": 24,
-			"pregunta": "Quin dia de la setmana ve després de divendres?",
-			"respostes": [
-				{ "id": 1, "resposta": "Dissabte", "correcta": true },
-				{ "id": 2, "resposta": "Diumenge", "correcta": false },
-				{ "id": 3, "resposta": "Divendres", "correcta": false },
-				{ "id": 4, "resposta": "Dilluns", "correcta": false }
-			],
-			"imatge": "https://exemple.com/dissabte.jpg"
-		},
-		{
-			"id": 25,
-			"pregunta": "Quina és la capital de Japó?",
-			"respostes": [
-				{ "id": 1, "resposta": "Tòquio", "correcta": true },
-				{ "id": 2, "resposta": "Osaka", "correcta": false },
-				{ "id": 3, "resposta": "Kyoto", "correcta": false },
-				{ "id": 4, "resposta": "Hiroshima", "correcta": false }
-			],
-			"imatge": "https://exemple.com/toquio.jpg"
-		},
-		{
-			"id": 26,
-			"pregunta": "Quin tipus de peix és el sushi?",
-			"respostes": [
-				{ "id": 1, "resposta": "Peix cru", "correcta": true },
-				{ "id": 2, "resposta": "Peix cuit", "correcta": false },
-				{ "id": 3, "resposta": "Peix fumat", "correcta": false },
-				{ "id": 4, "resposta": "Peix enllaunat", "correcta": false }
-			],
-			"imatge": "https://exemple.com/sushi.jpg"
-		},
-		{
-			"id": 27,
-			"pregunta": "Quina planta és coneguda per les seves flors blaves i blanques?",
-			"respostes": [
-				{ "id": 1, "resposta": "Nerines", "correcta": false },
-				{ "id": 2, "resposta": "Margarides", "correcta": false },
-				{ "id": 3, "resposta": "Hortènsies", "correcta": true },
-				{ "id": 4, "resposta": "Roses", "correcta": false }
-			],
-			"imatge": "https://exemple.com/hortensies.jpg"
-		},
-		{
-			"id": 28,
-			"pregunta": "Quina és la unitat de mesura de la temperatura?",
-			"respostes": [
-				{ "id": 1, "resposta": "Grau Celsius", "correcta": true },
-				{ "id": 2, "resposta": "Metre", "correcta": false },
-				{ "id": 3, "resposta": "Litre", "correcta": false },
-				{ "id": 4, "resposta": "Quilogram", "correcta": false }
-			],
-			"imatge": "https://exemple.com/temperatura.jpg"
-		},
-		{
-			"id": 29,
 			"pregunta": "Quina és la capital d'Itàlia?",
 			"respostes": [
 				{ "id": 1, "resposta": "Roma", "correcta": true },
@@ -317,18 +196,139 @@
 				{ "id": 3, "resposta": "Nàpols", "correcta": false },
 				{ "id": 4, "resposta": "Torí", "correcta": false }
 			],
-			"imatge": "https://exemple.com/roma.jpg"
+			"imatge": "https://images.unsplash.com/photo-1542082064-fb8d19b7163a"
+		},
+		{
+			"id": 19,
+			"pregunta": "Quin és l'animal nacional d'Austràlia?",
+			"respostes": [
+				{ "id": 1, "resposta": "Cangur", "correcta": true },
+				{ "id": 2, "resposta": "Koala", "correcta": false },
+				{ "id": 3, "resposta": "Emú", "correcta": false },
+				{ "id": 4, "resposta": "Dingo", "correcta": false }
+			],
+			"imatge": "https://images.unsplash.com/photo-1555685814-3070b99db11d"
+		},
+		{
+			"id": 20,
+			"pregunta": "Quina és la llengua oficial de Brasil?",
+			"respostes": [
+				{ "id": 1, "resposta": "Espanyol", "correcta": false },
+				{ "id": 2, "resposta": "Anglès", "correcta": false },
+				{ "id": 3, "resposta": "Portuguès", "correcta": true },
+				{ "id": 4, "resposta": "Francès", "correcta": false }
+			],
+			"imatge": "https://images.unsplash.com/photo-1576360698447-8ae149d7f6ec"
+		},
+		{
+			"id": 21,
+			"pregunta": "Quin és l'element químic amb símbol Au?",
+			"respostes": [
+				{ "id": 1, "resposta": "Argent", "correcta": false },
+				{ "id": 2, "resposta": "Or", "correcta": true },
+				{ "id": 3, "resposta": "Alumini", "correcta": false },
+				{ "id": 4, "resposta": "Coure", "correcta": false }
+			],
+			"imatge": "https://images.unsplash.com/photo-1575541571752-74de1b66c611"
+		},
+		{
+			"id": 22,
+			"pregunta": "Quina és la ciutat més poblada del món?",
+			"respostes": [
+				{ "id": 1, "resposta": "Tòquio", "correcta": true },
+				{ "id": 2, "resposta": "Nova York", "correcta": false },
+				{ "id": 3, "resposta": "Mèxic DF", "correcta": false },
+				{ "id": 4, "resposta": "Bombai", "correcta": false }
+			],
+			"imatge": "https://images.unsplash.com/photo-1530911040771-8c4d83c92d66"
+		},
+		{
+			"id": 23,
+			"pregunta": "Quina és la moneda oficial dels Estats Units?",
+			"respostes": [
+				{ "id": 1, "resposta": "Euro", "correcta": false },
+				{ "id": 2, "resposta": "Iene", "correcta": false },
+				{ "id": 3, "resposta": "Dòlar", "correcta": true },
+				{ "id": 4, "resposta": "Pound", "correcta": false }
+			],
+			"imatge": "https://images.unsplash.com/photo-1611549668737-2eb68eb31cd0"
+		},
+		{
+			"id": 24,
+			"pregunta": "Quina és la muntanya més alta del món?",
+			"respostes": [
+				{ "id": 1, "resposta": "K2", "correcta": false },
+				{ "id": 2, "resposta": "Kangchenjunga", "correcta": false },
+				{ "id": 3, "resposta": "Everest", "correcta": true },
+				{ "id": 4, "resposta": "Lhotse", "correcta": false }
+			],
+			"imatge": "https://images.unsplash.com/photo-1546067509-e8b8651bca7b"
+		},
+		{
+			"id": 25,
+			"pregunta": "Quina és la llengua oficial d'Àustria?",
+			"respostes": [
+				{ "id": 1, "resposta": "Alemany", "correcta": true },
+				{ "id": 2, "resposta": "Francès", "correcta": false },
+				{ "id": 3, "resposta": "Anglès", "correcta": false },
+				{ "id": 4, "resposta": "Italian", "correcta": false }
+			],
+			"imatge": "https://images.unsplash.com/photo-1586190804361-b1f0663c2bb2"
+		},
+		{
+			"id": 26,
+			"pregunta": "Quina és la capital de Grècia?",
+			"respostes": [
+				{ "id": 1, "resposta": "Atenes", "correcta": true },
+				{ "id": 2, "resposta": "Salònica", "correcta": false },
+				{ "id": 3, "resposta": "Patres", "correcta": false },
+				{ "id": 4, "resposta": "Heraklion", "correcta": false }
+			],
+			"imatge": "https://images.unsplash.com/photo-1600565611703-e953cb57f391"
+		},
+		{
+			"id": 27,
+			"pregunta": "Quin és el planeta més a prop del Sol?",
+			"respostes": [
+				{ "id": 1, "resposta": "Mercuri", "correcta": true },
+				{ "id": 2, "resposta": "Venus", "correcta": false },
+				{ "id": 3, "resposta": "Terra", "correcta": false },
+				{ "id": 4, "resposta": "Marte", "correcta": false }
+			],
+			"imatge": "https://images.unsplash.com/photo-1571769110931-6c3d373f78f6"
+		},
+		{
+			"id": 28,
+			"pregunta": "Quina és la capital de Suècia?",
+			"respostes": [
+				{ "id": 1, "resposta": "Estocolm", "correcta": true },
+				{ "id": 2, "resposta": "Gothenburg", "correcta": false },
+				{ "id": 3, "resposta": "Malmö", "correcta": false },
+				{ "id": 4, "resposta": "Uppsala", "correcta": false }
+			],
+			"imatge": "https://images.unsplash.com/photo-1561399482-2ef2f63f43c0"
+		},
+		{
+			"id": 29,
+			"pregunta": "Quin és el nom de la famosa piràmide de Gizeh?",
+			"respostes": [
+				{ "id": 1, "resposta": "Piràmide de Khufu", "correcta": true },
+				{ "id": 2, "resposta": "Piràmide de Kafre", "correcta": false },
+				{ "id": 3, "resposta": "Piràmide de Menkaure", "correcta": false },
+				{ "id": 4, "resposta": "Piràmide de Sòcrates", "correcta": false }
+			],
+			"imatge": "https://images.unsplash.com/photo-1569061827134-51002e28e1b8"
 		},
 		{
 			"id": 30,
-			"pregunta": "Quina és la moneda oficial dels Estats Units?",
+			"pregunta": "Quina és la moneda oficial del Regne Unit?",
 			"respostes": [
-				{ "id": 1, "resposta": "Dòlar", "correcta": true },
+				{ "id": 1, "resposta": "Dòlar", "correcta": false },
 				{ "id": 2, "resposta": "Euro", "correcta": false },
-				{ "id": 3, "resposta": "Ien", "correcta": false },
-				{ "id": 4, "resposta": "Pound", "correcta": false }
+				{ "id": 3, "resposta": "Lliura esterlina", "correcta": true },
+				{ "id": 4, "resposta": "Franco", "correcta": false }
 			],
-			"imatge": "https://exemple.com/dolar.jpg"
+			"imatge": "https://images.unsplash.com/photo-1562209588-d8c2e5029e61"
 		}
 	]
 }
