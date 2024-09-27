@@ -8,6 +8,14 @@ let estatDeLaPartida = [
     envResp = new Array()
 ];
 
+function rebreRespostes(info){
+    let objeto = {
+        totalResp = info.
+    
+    document.getElementById('pedro').classRemove
+}
+}
+
 function enviarPreguntes() {
     fetch(`../back/finalitza.php`,
         {
@@ -19,8 +27,7 @@ function enviarPreguntes() {
         })
         .then(response => response.json())
         .then(info => {
-            console.log(info);
-            data = info;
+            rebreRespostes(info)
         });
 }
 
@@ -39,6 +46,12 @@ fetch(`../back/getPreguntes.php`, {
         temporitzador = setInterval(comptadorTemps, 1000);
         mostrarPreguntes();
     });
+
+    function guardarJugador(){
+        
+    }
+
+
 
 //Comptador de temps
 function comptadorTemps() {
@@ -77,7 +90,7 @@ function mostrarPreguntes() {
     
 }
 document.getElementById("partida").addEventListener("click", function(e) {
-    if (e.target && e.target.classList.contains("botoResposta")) {
+    if (e.target.classList.contains("botoResposta")) {
         const indexRes = e.target.getAttribute("resp");
         const indexPreg = e.target.getAttribute("preg");
         guardarRespostes(indexPreg, indexRes);
@@ -97,6 +110,7 @@ function guardarRespostes(iPreg, iRes) {
     if (preguntaActual < data.length - 1) {
         preguntaActual++;
         mostrarPreguntes();
+        actualizarMarcador();
     } else {
         finalitzarPartida();
     }
@@ -107,4 +121,5 @@ function finalitzarPartida() {
     estatCrono.innerHTML += '<p>Test finalitzat!</p>';
     clearInterval(temporitzador);
     document.getElementById("partida").removeEventListener("click", guardarRespostes);
+    enviarPreguntes();
 }

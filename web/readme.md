@@ -27,3 +27,15 @@ La funcio hauria de recopilar la info que envia l'usuari i emmagatzemarho a l'ob
     https://www.php.net/manual/es/language.types.boolean.php#language.types.boolean.operators
     https://www.php.net/manual/es/book.errorfunc.php
     http://www.micmap.org/php-by-example/manual/es/function.unset.html
+
+
+
+
+/*  
+for($i=0;$i < $respostesRebudes.length(); $i++){    
+
+$validacio -> respostesCorrectes += 1;
+
+}  
+
+$validacio -> totalResp = $totalRespostes;

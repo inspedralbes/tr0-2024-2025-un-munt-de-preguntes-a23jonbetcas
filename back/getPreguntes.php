@@ -11,9 +11,9 @@ https://www.php.net/manual/es/function.define.php
 provar a fer servir el define en el $numPreguntes
 */
 
-if(!isset($_SESSION['preguntes'])){
+//if(!isset($_SESSION['preguntes'])){
     $_SESSION['preguntes']=generarPreguntes($arrayPreguntes);
-}
+//}
 
 
 function generarPreguntes($arrayPreguntes){
@@ -33,7 +33,7 @@ function generarPreguntes($arrayPreguntes){
             $respostesPregunta[] = array(
                 'id' => $resposta['id'], //id de la resposta
                 'resposta' => $resposta['resposta'], //resposta
-                'correcta' => $resposta['correcta'], //si és correcta o no
+               // 'correcta' => $resposta['correcta'] //si és correcta o no
             );
         }
     //iteras sobre respostes["correcta"] == true
@@ -57,5 +57,6 @@ function generarPreguntes($arrayPreguntes){
 
 
 //Aquest fitxer recull l'array i les envia al fitxer de js (front)
+
 echo json_encode($_SESSION['preguntes']);
 ?>
