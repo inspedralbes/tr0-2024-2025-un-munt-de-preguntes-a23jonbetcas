@@ -1,23 +1,42 @@
 let data = []; //guardar preguntes i respostes que obtenim del server
 let preguntaActual = 0; //establim un index per a la pregunta actual
+let tempsRestant;
 let temporitzador; //variable per a la resta de temps
 let estatDeLaPartida = []; //guardar les respostes del usuari
+;
+
+/*
+https://www.w3schools.com/jsref/prop_win_localstorage.asp
+https://developer.mozilla.org/es/docs/Web/API/Window/localStorage
+https://es.javascript.info/localstorage
+https://www.w3schools.com/jsref/prop_style_display.asp
+*/
 
 //Carreguem les preguntes
-fetch(`../back/getPreguntes.php`, {
-  method: "POST",
-  body: JSON.stringify({ count: 10 }),
-  headers: {
-    "Content-Type": "application/json",
-  },
-})
-  .then((response) => response.json())
+function carregarPreguntes() {
+  fetch(`../back/migrate.php`, {
+    method: "POST",
+    body: JSON.stringify({ count: 30 }),
+    headers: {
+      "Content-Type": "application/json",
+    },
+  })
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
   .then((info) => {
-    data = info; //guardem les preguntes obtingudes
-    iniciarTemporitzador(); //inicia el temporizador
-    mostrarPreguntes(); //mostrar la pregunta
+    console.log(info);
+    data = info; //guardem les preguntes i respostes
+    iniciarTemporitzador(); //iniciem el temporitzador
+    mostrarPreguntes(); //mostrem preguntes
+  })
+  .catch((error) => {
+    console.error('Error al cargar las preguntas:', error);
   });
-
+}
 function iniciarTemporitzador() {
   tempsRestant = 30;
   temporitzador = setInterval(comptadorTemps, 1000);
@@ -85,7 +104,7 @@ function guardarRespostes(iPreg, iRes) {
   }
 }
 function enviarRespostes() {
-  fetch(`../back/finalitza.php`, {
+  fetch(`../back/finalitzaBBDD.php`, {
     method: "POST",
     body: JSON.stringify(estatDeLaPartida),
     headers: {
@@ -103,3 +122,5 @@ function mostrarResultat(info) {
   punt.innerHTML = `<h2>Respostes Correctes: ${info.correcte}</h2>
           <h2>Total Respostes: ${info.totalResp}</h2>`;
 }
+
+carregarPreguntes();

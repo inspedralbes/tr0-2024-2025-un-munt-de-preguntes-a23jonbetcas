@@ -1,12 +1,6 @@
 <?php
 session_start();
 
-//chuminada per a que quan fem f5 reinicii la sessio
-if (isset($_SESSION['preguntes'])) {
-    session_unset();
-    session_destroy();
-    session_start();
-}
 
 header('Content-Type: application/json');
 
@@ -31,7 +25,7 @@ function generarPreguntes($arrayPreguntes)
                 'resposta' => $resposta['resposta'], //resposta
             );
         }
-        //Després de tenir totes les respostes de la pregunta iterada, construim un array que representa el total de la pregunta i les seves respostes
+        //Després de tenir totes les respostes de la pregunta iterada, construim un array que representa la pregunta i les seves respostes
         $preguntes[] = array(
             'id' => $pregunta['id'], //Id de la pregunta
             'pregunta' => $pregunta['pregunta'], //Pregunta
