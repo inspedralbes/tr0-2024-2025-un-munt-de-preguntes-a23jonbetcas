@@ -2,7 +2,7 @@
 $servidor = "localhost";
 $usuari = "root";
 $contrasenya = "";
-$base_datos = "muntpreguntes";//BBDD
+$base_datos = "muntPreguntes";//BBDD
 
 //creem la connexio
 $conn = new mysqli($servidor, $usuari, $contrasenya, $base_datos);
