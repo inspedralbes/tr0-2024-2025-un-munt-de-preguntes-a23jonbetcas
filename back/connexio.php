@@ -11,4 +11,9 @@ $conn = new mysqli($servidor, $usuari, $contrasenya, $base_datos);
 if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
 }
+
+if (!$conn) {
+    die("Conexión fallida: " . mysqli_connect_error());
+}
+
 ?>

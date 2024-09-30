@@ -39,14 +39,12 @@ if ($resultat) {
             ];
         }
     }
-    //var_dump($preguntes);
 }
 
 //https://www.php.net/manual/es/function.array-values.php
 $preguntes = array_values($preguntes);
-
 $conn->close();
+var_dump($preguntes);
 
-//var_dump(value: $_SESSION['preguntes']);
 echo json_encode($preguntes);
 ?>
