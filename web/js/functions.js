@@ -14,7 +14,7 @@ https://www.w3schools.com/jsref/prop_style_display.asp
 
 //Carreguem les preguntes
 function carregarPreguntes() {
-  fetch(`../back/migrate.php`, {
+  fetch(`../back/getPreguntesBBDD.php`, {
     method: "POST",
     body: JSON.stringify({ count: 30 }),
     headers: {

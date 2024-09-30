@@ -2,51 +2,35 @@
 session_start();
 header('Content-Type: application/json');
 
-include 'connexio.php';
-$preguntes = [];
+include "connexio.php";
+//Cargar el JSON
+$data = file_get_contents("./data.json");
+$arrayPreguntes = json_decode($data, true); //Converteix l'objecte JSON en array amb les preguntes i respostes
 
-/*
-https://es.stackoverflow.com/questions/436644/como-guardar-todos-los-datos-de-una-consulta-de-mysql-en-un-array-de-php
-https://programacionymas.com/blog/como-funciona-inner-left-right-full-join
+//Insertar preguntes
+foreach ($data['preguntes'] as $pregunta) {
+    $pregunta_id = $pregunta['id'];
+    $textPregunta = mysqli_real_escape_string($conn, $pregunta['pregunta']);
+    $imatge = $pregunta['imatge'];
 
-Escollim les columnes que volem de la taula, obtenim l'id i text de cada pregunta,
-i els id i text de les respostes associades, amb el LEFT JOIN unim les taules que estan unides per el id de la pregunta
- */
-$consulta = "SELECT p.id AS pregunta_id, p.pregunta, r.id AS resposta_id, r.resposta
-        FROM preguntes p
-        LEFT JOIN respostes r ON p.id = r.pregunta_id";
+    $sql = "INSERT INTO preguntes (id, pregunta, imatge) VALUES ('$pregunta_id', '$textPregunta', '$imatge')";
 
-//executar la consulta
-$resultat = mysqli_query($conn, $consulta);
+    if (mysqli_query($conn, $sql)) {
+        //Insertar respostes
+        foreach ($pregunta['respostes'] as $resposta) {
+            $resposta_id = $resposta['id'];
+            //https://www.php.net/manual/en/mysqli.real-escape-string.php
+            $textResposta = mysqli_real_escape_string($conn, $resposta['resposta']);
+            $correcta = $resposta['correcta'] ? 1 : 0;
 
-if ($resultat) {
-    //iterem a traves dels resultats
-    while ($row = $resultat->fetch_assoc()) {
-        //Comprovem primer si la pregunta es repeteix
-        if (!isset($preguntes[$row['pregunta_id']])) {
-            //Creem un objecte per a cada pregunta
-            $preguntes[$row['pregunta_id']] = [
-                'id' => $row['pregunta_id'], //id de la pregunta
-                'pregunta' => $row['pregunta'], //text de la pregunta
-                'respostes' => [] //Fem el array de les respostes com al getPreguntes
-            ];
+            $sql_resposta = "INSERT INTO respostes (id, pregunta_id, resposta, correcta) VALUES ('$resposta_id', '$pregunta_id', '$textResposta', '$correcta')";
+            mysqli_query($conn, $sql_resposta);
         }
-        //Afegim la resposta a l'array
-        if ($row['resposta_id']) {
-            $preguntes[$row['pregunta_id']]['respostes'][] = [
-                'id' => $row['resposta_id'], //id de la resposta
-                'resposta' => $row['resposta'] //text de la resposta
-            ];
-        }
+    } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
-    //var_dump($preguntes);
 }
 
-//https://www.php.net/manual/es/function.array-values.php
-$preguntes = array_values($preguntes);
-
-$conn->close();
-
-//var_dump(value: $_SESSION['preguntes']);
-echo json_encode($preguntes);
+echo "Importat correctament.";
+mysqli_close($conn);
 ?>
