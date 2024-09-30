@@ -43,7 +43,7 @@ function mostrarPreguntes() {
     htmlString +=
       "<td><button onclick='editarPreguntes()'>Editar</button></td>";
     htmlString +=
-      "<td><button onclick='eliminarPreguntes()'>Eliminar</button></td>";
+      "<td><button onclick='eliminarPreguntes(${pregunta.id})'>Eliminar</button></td>";
     htmlString += "</tr>";
   }
   htmlString += "</table>";
@@ -100,6 +100,29 @@ function afegirPreguntes() {
       });
   }
   
+  function eliminarPreguntes(id) {    
+      fetch(`../back/eliminar.php`, {
+        method: "POST",
+        body: JSON.stringify({id: id}),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("La resposta de la xarxa no ha estat correcta");
+          }
+          return response.json();
+        })
+        .then((info) => {
+          console.log(info);
+          carregarPreguntes(); 
+        })
+        .catch((error) => {
+          console.error("Error al eliminar la pregunta:", error);
+        });
+    
+  }
   
 carregarPreguntes();
 afegirPreguntes();
