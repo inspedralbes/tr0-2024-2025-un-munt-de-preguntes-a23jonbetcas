@@ -1,6 +1,6 @@
 <?php
-include("connexio.php");    
 
+include("connexio.php");    
 
 //Cargar el JSON
 $data = file_get_contents("./data.json");

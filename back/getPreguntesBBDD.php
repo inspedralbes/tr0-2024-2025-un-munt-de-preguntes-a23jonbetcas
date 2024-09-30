@@ -6,6 +6,7 @@ include 'connexio.php';
 $preguntes = [];
 
 /*
+https://www.php.net/manual/es/book.mysqli.php
 https://es.stackoverflow.com/questions/436644/como-guardar-todos-los-datos-de-una-consulta-de-mysql-en-un-array-de-php
 https://programacionymas.com/blog/como-funciona-inner-left-right-full-join
 
@@ -44,7 +45,6 @@ if ($resultat) {
 //https://www.php.net/manual/es/function.array-values.php
 $preguntes = array_values($preguntes);
 $conn->close();
-var_dump($preguntes);
 
 echo json_encode($preguntes);
 ?>

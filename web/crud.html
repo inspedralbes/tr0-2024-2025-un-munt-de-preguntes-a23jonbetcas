@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Preguntas</title>
+  </head>
+  <body>
+    <h1>CRUD</h1>
+    <form id="insertar">
+        <input type="text" name="Pregunta" placeholder="Pregunta" required>
+        <input type="text" name="Imatge" placeholder="Imatge" >
+        <input type="text" name="Resposta 1" placeholder="Resposta" required>
+        <input type="text" name="Resposta 2" placeholder="Resposta" required>
+        <input type="text" name="Resposta 3" placeholder="Resposta" required>
+        <input type="text" name="Resposta 4" placeholder="Resposta" required>
+        <select name="Correcta" required>
+            <option value="">Selecciona la resposta correcta</option>
+            <option value="1">Respuesta 1</option>
+            <option value="2">Respuesta 2</option>
+            <option value="3">Respuesta 3</option>
+            <option value="4">Respuesta 4</option>
+        </select>
+        <button type="submit">Enviar</button>
+    </form>
+    
+    <div id="crud">
+      <h2>Lista de Preguntas</h2>
+    </div>
+    <script src="./js/crud.js"></script>
+  </body>
+</html>
