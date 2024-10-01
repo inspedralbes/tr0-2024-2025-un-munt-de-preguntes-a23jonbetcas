@@ -8,5 +8,6 @@ CREATE TABLE respostes (
     id INT PRIMARY KEY AUTO_INCREMENT,
     pregunta_id INT,
     resposta VARCHAR(255) NOT NULL,
+    correcta BOOLEAN NOT NULL,
     FOREIGN KEY (pregunta_id) REFERENCES preguntes(id)
 );

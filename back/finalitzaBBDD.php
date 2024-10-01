@@ -2,39 +2,44 @@
 session_start();
 
 include("connexio.php");
-$respostesRebudes = json_decode(file_get_contents('php://input'), true); //obtenim i decodifiquem les respostes enviades per l'usuari
+$respostesRebudes = json_decode(file_get_contents('php://input'), true);
 
-$validacio = new stdClass(); //Creem un objecte per guardar els resultats
-$totalResp = count($respostesRebudes); //Comptem les respostes rebudes
+$validacio = new stdClass();
+$totalResp = count($respostesRebudes);
 $respostaCorrecte = 0;
+$consulta = "
+    SELECT p.id AS pregunta_id, r.resposta, r.correcta 
+    FROM preguntes p
+    LEFT JOIN respostes r ON p.id = r.pregunta_id";
 
-//Consultem les preguntes i respostes desde la bbdd
-$consulta = "SELECT id, pregunta, resposta FROM preguntes";
-$resultat = mysqli_query($con, $consulta);
+$resultat = mysqli_query($conn, $consulta);
 
-$arrayPreguntes = [];
-
-//iterem a traves dels resultats
-while ($row = mysqli_fetch_array($resultat)) {
-    $arrayPreguntes[$row['id']] = [
-        'respostes' => $row['respostes'], //Guardem les respostes
-        'resposta_correcta' => $row['resposta_correcta'] //Guardem la correcta
-    ];   
+//Verificar la consulta
+if (!$resultat) {
+    die("Error en la consulta: " . mysqli_error($conn));
 }
+//Creem l'array per a les respostes correctes
+$arrayRespostes = [];
 
-//validem si es correcta o no
+//Iterem sobre els resultats de la consulta
+while ($row = mysqli_fetch_assoc($resultat)) {
+    //Guardem cada resposta junta amb si es correcta o no
+    $arrayRespostes[$row['pregunta_id']][] = [
+        'resposta' => $row['resposta'],
+        'correcta' => (bool) $row['correcta'] //Amb el bool asegurem que es boolean
+    ];
+}
+//validem les respostes rebudes
 foreach ($respostesRebudes as $actual) {
-    $idPreg = $actual['pregunta']; //id de la pregunta
-    $opcioTriada = $actual['resposta']; //resposta de l'usuari
-
-    if ($arrayPreguntes[$idPreg]['resposta_correcta'] == $opcioTriada) {
-        $respostaCorrecte++; // Incrementa el contador si la respuesta es correcta
-    }
+    $idPreg = (int) $actual['pregunta']; //id de la pregunta
+    $indexRes = (int) $actual['resposta']; //id de la resposta
+    //verifiquem si la resposta triada coincideix amb la correcta
+    $respostaCorrecte += $arrayRespostes[$idPreg][$indexRes]['correcta'] ?? 0;
 }
 
-//Assignem resultats a la validacio
-$validacio->correcte = $respostaCorrecte;//guardem el total de respostes correctes
-$validacio->totalResp = $totalResp; //guardem el total de respostes
+$validacio->correcte = $respostaCorrecte;
+$validacio->totalResp = $totalResp;
 
+// Devolver la respuesta como JSON
 echo json_encode($validacio);
 ?>

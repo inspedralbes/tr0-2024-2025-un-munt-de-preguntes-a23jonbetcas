@@ -1,31 +1,75 @@
+/* Estilo general del body */
 body {
   font-family: Arial, sans-serif;
-
   margin: 0;
   padding: 20px;
+  background-color: #eaf3f7; /* Color de fondo suave */
+  color: #333; /* Color del texto */
   text-align: center;
 }
-#partida {
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 2px solid #4CAF50;
-  border-radius: 5px; 
-}
-#estatPartida {
-  font-size: 18px;
-  margin-bottom: 10px;
-  
-}
-#dadesJugador {
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 2px solid #4CAF50;
-  border-radius: 5px; 
 
+/* Estilo para el título principal */
+h1 {
+  margin-bottom: 20px;
 }
+
+/* Estilo para enlaces */
+a {
+  color: #3498db; /* Color azul */
+  text-decoration: none;
+  padding: 10px 15px;
+  border: 2px solid #3498db; /* Mismo color azul */
+  border-radius: 5px;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+/* Estilo para botones */
 button {
-  padding: 10px;
-  margin: 5px;
-  font-size: 16px;
+  background: #2980b9; /* Color azul oscuro */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
   cursor: pointer;
+  margin: 10px 0;
+}
+
+/* Estilo para formularios */
+.form-container {
+  margin: 20px 0;
+}
+
+form {
+  margin: 20px 0;
+}
+
+/* Estilo para inputs y selects */
+input[type="text"], select {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+/* Estilo para la lista de preguntas */
+#crud {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #3498db; /* Mismo azul para encabezados */
+  color: white;
 }

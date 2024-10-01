@@ -1,22 +1,24 @@
 <?php
 include 'connexio.php';
-
 $data = json_decode(file_get_contents("php://input"), true);
 
-if (isset($data['Pregunta'], $data['Imatge'], $data['respostes'])) {
-    $pregunta = $data['Pregunta'];
-    $imatge = $data['Imatge'];
+//Insertar la pregunta
 
-    $sql = "INSERT INTO preguntes (pregunta, imatge) VALUES ('$pregunta', '$imatge')";
-    
-    if (mysqli_query($conn, $sql)) {
-        $pregunta_id = mysqli_insert_id($conn);
-        foreach ($data['respostes'] as $resposta) {
-            $respostaPregunta = $resposta['resposta'];
-            $sql_resposta = "INSERT INTO respostes (pregunta_id, resposta) VALUES ('$pregunta_id', '$respostaPregunta')";
-            mysqli_query($conn, $sql_resposta);
-        }
-    }
+//Preparem la consulta SQL
+$stmt = $conn->prepare("INSERT INTO preguntes (pregunta, imatge) VALUES (?, ?)"); //Associem parametres
+$stmt->bind_param("ss", $data['Pregunta'], $data['Imatge']);// ss es per a string
+$stmt->execute();
+$pregunta_id = $stmt->insert_id; //guardem el id generat per a la pregunta insertada
+
+//Insertar respostes
+foreach ($data['respostes'] as $resposta) {
+    $stmt_resposta = $conn->prepare("INSERT INTO respostes (pregunta_id, resposta, correcta) VALUES (?, ?,?)");
+    $stmt_resposta->bind_param("isi", $pregunta_id, $resposta['resposta']); //is es per a enter i string
+    $stmt_resposta->execute();
+    $stmt_resposta->close();
 }
+
+$stmt->close();
 $conn->close();
+echo json_encode(["success" => true, "id" => $pregunta_id]);
 ?>
