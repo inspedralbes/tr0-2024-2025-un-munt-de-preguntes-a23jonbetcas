@@ -127,12 +127,14 @@ function editarPreguntes(id) {
       id: idBuscat,
       pregunta: document.getElementById('pregunta').value,
       imatge: document.getElementById('Imatge').value,
-      rta1: document.getElementById('rta1').value,
-      rta2: document.getElementById('rta2').value,
-      rta3: document.getElementById('rta3').value,
-      rta4: document.getElementById('rta4').value,
-      correcte: document.getElementById('correcte').value,
+      respostes: [
+        { id: 1, resposta: document.getElementById('rta1').value, correcta: document.getElementById('correcte').value === '1' },
+        { id: 2, resposta: document.getElementById('rta2').value, correcta: document.getElementById('correcte').value === '2' },
+        { id: 3, resposta: document.getElementById('rta3').value, correcta: document.getElementById('correcte').value === '3' },
+        { id: 4, resposta: document.getElementById('rta4').value, correcta: document.getElementById('correcte').value === '4' }
+      ]
     };
+    
 
     fetch(`../back/actualitzar.php`, {
       method: "POST",
