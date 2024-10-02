@@ -3,7 +3,7 @@ let preguntaActual = 0; //establim un index per a la pregunta actual
 let tempsRestant;
 let temporitzador; //variable per a la resta de temps
 let estatDeLaPartida = []; //guardar les respostes del usuari
-let preguntesSeleccionades;
+let preguntesSeleccionades = 10;
 /*
 https://www.w3schools.com/jsref/prop_win_localstorage.asp
 https://developer.mozilla.org/es/docs/Web/API/Window/localStorage
@@ -11,30 +11,11 @@ https://es.javascript.info/localstorage
 https://www.w3schools.com/jsref/prop_style_display.asp
 */
 
-function iniciarQuiz() {
-  const numPreguntes = document.getElementById("numPreguntes");
-
-  numPreguntes.innerHTML = `<form id="formPreguntes">
-      <input type="number" id="numPreguntes" placeholder="Número de preguntes" min="1" max="30" required>
-      <button type="submit"> Començar </button>
-    </form>`;
-    document
-    .getElementById("formPreguntes")
-    .addEventListener("submit", (event) => {
-      event.preventDefault();
-      preguntesSeleccionades = parseInt( // Guarda el número de preguntas seleccionadas
-        document.getElementById("numPreguntes").value
-      );
-      carregarPreguntes(preguntesSeleccionades);
-    });
-  
-}
-
 //Carreguem les preguntes
-function carregarPreguntes(count) {
+function carregarPreguntes() {
   fetch(`../back/getPreguntesBBDD.php`, {
     method: "POST",
-    body: JSON.stringify({ count: count }),
+    body: JSON.stringify({ count: preguntesSeleccionades }),
     headers: {
       "Content-Type": "application/json",
     },
@@ -50,6 +31,7 @@ function carregarPreguntes(count) {
       data = info; //guardem les preguntes i respostes
       iniciarTemporitzador(); //iniciem el temporitzador
       mostrarPreguntes(); //mostrem preguntes
+      actualizarMarcador();
     })
     .catch((error) => {
       console.error("Error al cargar las preguntas:", error);
@@ -104,19 +86,9 @@ function mostrarPreguntes() {
       htmlString += `<button class="botoResposta" preg="${pregunta.id}" resp="${i}"> ${pregunta.respostes[i].resposta} </button>`;
     }
     htmlString += "<br><br>";
-    //botons de navegacio
-    htmlString += `<button id="anterior" onclick="navegar(-1)">Anterior</button>
-      <button id="siguiente" onclick="navegar(1)">Siguiente</button>
-    `;
-
+   
     punt.innerHTML = htmlString; //Actualitzem el div amb les respostes
-  }
-
-  if (preguntaActual === numPreguntesSeleccionades - 1) {
-    document.getElementById("siguiente").disabled = true;
-  } else {
-    document.getElementById("siguiente").disabled = false; //habilitar si no es la ultima pregunta
-  }
+  }  
 }
 
 //Creem un event listener al div de partida per a gestionar els clics en els botons de resposta
@@ -177,4 +149,6 @@ function mostrarResultat(info) {
   });
 }
 
-iniciarQuiz();
+carregarPreguntes();
+
+//iniciarQuiz();
