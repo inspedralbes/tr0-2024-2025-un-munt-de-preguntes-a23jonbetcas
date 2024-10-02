@@ -11,6 +11,7 @@ https://es.javascript.info/localstorage
 https://www.w3schools.com/jsref/prop_style_display.asp
 */
 
+
 //Carreguem les preguntes
 function carregarPreguntes() {
   fetch(`../back/getPreguntesBBDD.php`, {
@@ -39,7 +40,7 @@ function carregarPreguntes() {
 }
 function iniciarTemporitzador() {
   tempsRestant = 30;
-  temporitzador = setInterval(comptadorTemps, 1000);
+  temporitzador = setInterval(comptadorTemps, 1000); //cada segon, executem la funcio comptadorTemps
 }
 
 //Comptador de temps
@@ -53,7 +54,7 @@ function comptadorTemps() {
     enviarRespostes(); //enviar les respostes al servidor
   }
 }
-
+/*
 function navegar(i) {
   if (i === 1 && preguntaActual < preguntesSeleccionades - 1) {
     preguntaActual++;
@@ -65,28 +66,26 @@ function navegar(i) {
     actualizarMarcador();
   }
 }
-
+*/
 function actualizarMarcador() {
   const estat = document.getElementById("estatPartida");
-  estat.innerHTML = `<h3>Temps restant: ${tempsRestant}s <br> Pregunta: ${
-    preguntaActual + 1
-  }/${preguntesSeleccionades}</h3>`;
+  //mostrem el temps restant i la pregunta actual en el marcador
+  estat.innerHTML = `<h3>Temps restant: ${tempsRestant}s <br> Pregunta: ${preguntaActual + 1}/${preguntesSeleccionades}</h3>`;
 }
-
-
 function mostrarPreguntes() {
   const punt = document.getElementById("partida");
 
+  //si encara no hem arribat al limit de preguntes
   if (preguntaActual < preguntesSeleccionades) {
     const pregunta = data[preguntaActual]; //obtenim la pregunta actual del array
     let htmlString = `<h2> ${pregunta.pregunta} </h2> `; //creem una cadena per a mostrar la pregunta
 
     //iterem sobre les respostes de la pregunta actual
     for (let i = 0; i < pregunta.respostes.length; i++) {
+      //creem un boto per a cada resposta
       htmlString += `<button class="botoResposta" preg="${pregunta.id}" resp="${i}"> ${pregunta.respostes[i].resposta} </button>`;
     }
-    htmlString += "<br><br>";
-   
+    htmlString += "<br><br>";   
     punt.innerHTML = htmlString; //Actualitzem el div amb les respostes
   }  
 }
@@ -106,22 +105,24 @@ function botonsRespostes(e) {
 function guardarRespostes(iPreg, iRes) {
   //Guardem la resposta del usuari
   estatDeLaPartida[preguntaActual] = {
-    pregunta: parseInt(iPreg),
-    resposta: parseInt(iRes),
+    pregunta: parseInt(iPreg), //guardem l'id de la pregunta
+    resposta: parseInt(iRes), //guardem l'id de la resposta seleccionada
   };
 
-  //Si hi ha més preguntes, mostrem la seguent
+  //Si encara hi ha més preguntes
   if (preguntaActual < preguntesSeleccionades - 1) {
-    preguntaActual++;
+    //pasem a la seguent i actualitzem pantalla
+    preguntaActual++; 
     mostrarPreguntes();
     actualizarMarcador();
   } else {
+    //si no queden preguntes aturem el temporitzador i enviem les respostes
     clearInterval(temporitzador);
-    enviarRespostes(); //si no queden mes preguntes enviem les respostes
+    enviarRespostes(); 
   }
 }
 function enviarRespostes() {
-  console.log("Respuestas enviadas:", JSON.stringify(estatDeLaPartida)); // Verifica los datos que se envían
+  console.log("Respuestas enviadas:", JSON.stringify(estatDeLaPartida)); //Verifiquem les dades que s'envien
   fetch(`../back/finalitzaBBDD.php`, {
     method: "POST",
     body: JSON.stringify(estatDeLaPartida),
@@ -134,14 +135,14 @@ function enviarRespostes() {
       mostrarResultat(info);
     })
     .catch((error) => {
-      console.error("Error al enviar las respuestas:", error);
+      console.error("Error al enviar les respostes:", error);
     });
 }
 
 function mostrarResultat(info) {
   const punt = document.getElementById("resultat");
-  punt.innerHTML = `<h2>Respostes Correctes: ${info.correcte}</h2>
-          <h2>Total Respostes: ${info.totalResp}</h2>`;
+  //mostrem el numero de respostes correctes i el total de respostes que hem rebut
+  punt.innerHTML = `<h2>Respostes Correctes: ${info.correcte}</h2><h2>Total Respostes: ${info.totalResp}</h2>`;
 
   const botoRespostes = document.querySelectorAll(".botoResposta");
   botoRespostes.forEach((boto) => {

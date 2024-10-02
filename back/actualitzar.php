@@ -38,7 +38,6 @@ if (isset($data['id'], $data['pregunta'], $data['imatge'], $data['respostes'])) 
         echo json_encode(['status' => 'error', 'message' => 'Error al actualitzar la pregunta.']);
     }
 } else {
-    // Si faltan datos en la solicitud, devolver un mensaje de error
     error_log('Falten dades a la solicitud: ' . print_r($data, true));
     echo json_encode(['status' => 'error', 'message' => 'Falten dades a la solicitud.']);
 }
