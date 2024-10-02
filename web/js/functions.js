@@ -11,7 +11,17 @@ https://es.javascript.info/localstorage
 https://www.w3schools.com/jsref/prop_style_display.asp
 */
 
+function iniciarPartida() {
+  const portada = document.getElementById("portada");
+  portada.innerHTML += '<br><button id="iniciarPart">Iniciar Partida</button>';
 
+    document.getElementById("iniciarPart").addEventListener("click", function () {
+    document.getElementById("portada").style.display = "none";
+    carregarPreguntes();
+    document.getElementById("estatPartida").style.display = "block";
+    document.getElementById("partida").style.display = "block";
+  });
+}
 //Carreguem les preguntes
 function carregarPreguntes() {
   fetch(`../back/getPreguntesBBDD.php`, {
@@ -54,23 +64,13 @@ function comptadorTemps() {
     enviarRespostes(); //enviar les respostes al servidor
   }
 }
-/*
-function navegar(i) {
-  if (i === 1 && preguntaActual < preguntesSeleccionades - 1) {
-    preguntaActual++;
-    mostrarPreguntes();
-    actualizarMarcador();
-  } else if (i === -1 && preguntaActual > 0) {
-    preguntaActual--;
-    mostrarPreguntes();
-    actualizarMarcador();
-  }
-}
-*/
+
 function actualizarMarcador() {
   const estat = document.getElementById("estatPartida");
   //mostrem el temps restant i la pregunta actual en el marcador
-  estat.innerHTML = `<h3>Temps restant: ${tempsRestant}s <br> Pregunta: ${preguntaActual + 1}/${preguntesSeleccionades}</h3>`;
+  estat.innerHTML = `<h3>Temps restant: ${tempsRestant}s <br> Pregunta: ${
+    preguntaActual + 1
+  }/${preguntesSeleccionades}</h3>`;
 }
 function mostrarPreguntes() {
   const punt = document.getElementById("partida");
@@ -79,15 +79,18 @@ function mostrarPreguntes() {
   if (preguntaActual < preguntesSeleccionades) {
     const pregunta = data[preguntaActual]; //obtenim la pregunta actual del array
     let htmlString = `<h2> ${pregunta.pregunta} </h2> `; //creem una cadena per a mostrar la pregunta
+    if (pregunta.imatge) {
+      htmlString += `<img src="${pregunta.imatge}" width="200" height="200"/>`;
+    }
 
     //iterem sobre les respostes de la pregunta actual
     for (let i = 0; i < pregunta.respostes.length; i++) {
       //creem un boto per a cada resposta
       htmlString += `<button class="botoResposta" preg="${pregunta.id}" resp="${i}"> ${pregunta.respostes[i].resposta} </button>`;
     }
-    htmlString += "<br><br>";   
+    htmlString += "<br><br>";
     punt.innerHTML = htmlString; //Actualitzem el div amb les respostes
-  }  
+  }
 }
 
 //Creem un event listener al div de partida per a gestionar els clics en els botons de resposta
@@ -112,13 +115,13 @@ function guardarRespostes(iPreg, iRes) {
   //Si encara hi ha més preguntes
   if (preguntaActual < preguntesSeleccionades - 1) {
     //pasem a la seguent i actualitzem pantalla
-    preguntaActual++; 
+    preguntaActual++;
     mostrarPreguntes();
     actualizarMarcador();
   } else {
     //si no queden preguntes aturem el temporitzador i enviem les respostes
     clearInterval(temporitzador);
-    enviarRespostes(); 
+    enviarRespostes();
   }
 }
 function enviarRespostes() {
@@ -143,13 +146,17 @@ function mostrarResultat(info) {
   const punt = document.getElementById("resultat");
   //mostrem el numero de respostes correctes i el total de respostes que hem rebut
   punt.innerHTML = `<h2>Respostes Correctes: ${info.correcte}</h2><h2>Total Respostes: ${info.totalResp}</h2>`;
+  punt.innerHTML+=`<button id="tornar">Tornar a la portada</button>`;
+
+  document.getElementById("tornar").onclick = function () {
+    location.reload();
+  };
 
   const botoRespostes = document.querySelectorAll(".botoResposta");
   botoRespostes.forEach((boto) => {
     boto.disabled = true; //Deshabilitar cada botó de resposta
+
   });
 }
 
-carregarPreguntes();
-
-//iniciarQuiz();
+iniciarPartida();

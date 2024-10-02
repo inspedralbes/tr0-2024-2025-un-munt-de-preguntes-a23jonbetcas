@@ -9,7 +9,7 @@
 				{ "id": 3, "resposta": "Mart", "correcta": false },
 				{ "id": 4, "resposta": "Saturn", "correcta": false }
 			],
-			"imatge": "https://images.unsplash.com/photo-1513998920758-05c4e4e9b5b8"
+			"imatge": "/documents/21564/23256865/Sistema-solar-3.jpg/d2255303-4f35-55af-2b98-1a1be5ea9d7d?t=1605859447165"
 		},
 		{
 			"id": 2,
@@ -20,7 +20,7 @@
 				{ "id": 3, "resposta": "Hidrogen", "correcta": true },
 				{ "id": 4, "resposta": "Carboni", "correcta": false }
 			],
-			"imatge": "https://images.unsplash.com/photo-1604692946480-0c4f00897c48"
+			"imatge": "https://www.zschimmer-schwarz.es/app/uploads/2020/06/Tabla_Perio__dica.jpg"
 		},
 		{
 			"id": 3,
@@ -31,7 +31,7 @@
 				{ "id": 3, "resposta": "Madrid", "correcta": true },
 				{ "id": 4, "resposta": "Barcelona", "correcta": false }
 			],
-			"imatge": "https://images.unsplash.com/photo-1586484671196-b75f01c5a7c8"
+			"imatge": "https://phantom-elmundo.unidadeditorial.es/1d5035c0039445c39492909a7e6b92f3/resize/920/f/webp/assets/multimedia/imagenes/2024/05/16/17158602444136.jpg"
 		},
 		{
 			"id": 4,
@@ -42,7 +42,7 @@
 				{ "id": 3, "resposta": "C++", "correcta": false },
 				{ "id": 4, "resposta": "JavaScript", "correcta": true }
 			],
-			"imatge": "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0"
+			"imatge": "https://d3a9n3quhe2vf1.cloudfront.net/img/article/que-es-programacion.webp"
 		},
 		{
 			"id": 5,
@@ -53,7 +53,7 @@
 				{ "id": 3, "resposta": "Àsia", "correcta": false },
 				{ "id": 4, "resposta": "Europa", "correcta": false }
 			],
-			"imatge": "https://images.unsplash.com/photo-1541360857859-c1658476b06b"
+			"imatge": "https://www.tuexperto.com/wp-content/uploads/2017/05/mapamundi-mapa-mundo-01-1-1080x725.jpg"
 		},
 		{
 			"id": 6,

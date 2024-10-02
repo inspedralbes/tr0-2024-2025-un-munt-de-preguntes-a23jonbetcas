@@ -189,4 +189,5 @@ function eliminarPreguntes(id) {
     });
 }
 
+
 carregarPreguntes();

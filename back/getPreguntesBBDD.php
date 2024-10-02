@@ -13,7 +13,7 @@ https://programacionymas.com/blog/como-funciona-inner-left-right-full-join
 Escollim les columnes que volem de la taula, obtenim l'id i text de cada pregunta,
 i els id i text de les respostes associades, amb el LEFT JOIN unim les taules que estan unides per el id de la pregunta
  */
-$consulta = "SELECT p.id AS pregunta_id, p.pregunta, r.id AS resposta_id, r.resposta
+$consulta = "SELECT p.id AS pregunta_id, p.pregunta, p.imatge, r.id AS resposta_id, r.resposta
         FROM preguntes p
         LEFT JOIN respostes r ON p.id = r.pregunta_id";
 
@@ -29,6 +29,7 @@ if ($resultat) {
             $preguntes[$row['pregunta_id']] = [
                 'id' => $row['pregunta_id'], //id de la pregunta
                 'pregunta' => $row['pregunta'], //text de la pregunta
+                'imatge' => $row['imatge'],
                 'respostes' => [] //Fem el array de les respostes com al getPreguntes
             ];
         }
