@@ -4,6 +4,11 @@ session_start();
 include("connexio.php");
 $respostesRebudes = json_decode(file_get_contents('php://input'), true);
 
+
+/*
+Creem un objecte buit per guardar el resultat, calculem el nombre total de respostes rebudes 
+i un comptador de respostes correctes.
+*/
 $validacio = new stdClass();
 $totalResp = count($respostesRebudes);
 $respostaCorrecte = 0;
@@ -26,13 +31,13 @@ while ($row = mysqli_fetch_assoc($resultat)) {
     //Guardem cada resposta junta amb si es correcta o no
     $arrayRespostes[$row['pregunta_id']][] = [
         'resposta' => $row['resposta'],
-        'correcta' => (bool) $row['correcta'] //Amb el bool asegurem que es boolean
+        'correcta' => $row['correcta'] //Amb el bool asegurem que es boolean
     ];
 }
 //validem les respostes rebudes
 foreach ($respostesRebudes as $actual) {
-    $idPreg = (int) $actual['pregunta']; //id de la pregunta
-    $indexRes = (int) $actual['resposta']; //id de la resposta
+    $idPreg =  $actual['pregunta']; //id de la pregunta
+    $indexRes = $actual['resposta']; //id de la resposta
     //verifiquem si la resposta triada coincideix amb la correcta
     $respostaCorrecte += $arrayRespostes[$idPreg][$indexRes]['correcta'] ?? 0;
 }

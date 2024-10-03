@@ -8,11 +8,15 @@ $preguntes = [];
 /*
 https://www.php.net/manual/es/book.mysqli.php
 https://es.stackoverflow.com/questions/436644/como-guardar-todos-los-datos-de-una-consulta-de-mysql-en-un-array-de-php
-https://programacionymas.com/blog/como-funciona-inner-left-right-full-join
+https://programacionymas.com/blog/como-funciona-inner-left-right-full-join */
 
-Escollim les columnes que volem de la taula, obtenim l'id i text de cada pregunta,
-i els id i text de les respostes associades, amb el LEFT JOIN unim les taules que estan unides per el id de la pregunta
- */
+/*
+Assignem el ID de la pregunta a pregunta_id, llavors seleccionem la pregunta, imatge i respostes associades.Assignem el ID de la resposta a resposta_id, 
+llavors seleccionem la resposta. Amb el left join podem unir les taules preguntes i respostes,
+aixo vol dir que es seleccionen tots els elements de la taula preguntes i registres que estiguin units per l'id de la taula respostes.
+el p.id = r.pregunta_id especifica la condicio de la unio, on la id de la pregunta a la taula preguntes ha de coincidir amb el pregunta_id a respostes
+*/
+
 $consulta = "SELECT p.id AS pregunta_id, p.pregunta, p.imatge, r.id AS resposta_id, r.resposta
         FROM preguntes p
         LEFT JOIN respostes r ON p.id = r.pregunta_id";
@@ -20,6 +24,10 @@ $consulta = "SELECT p.id AS pregunta_id, p.pregunta, p.imatge, r.id AS resposta_
 //executar la consulta
 $resultat = mysqli_query($conn, $consulta);
 
+/*
+Comprovem si la pregunta ja ha estat afegida a l'array $preguntes fent us del seu id,
+si no existeix es crea un array per a la pregunta amb els seus respectius camps
+*/
 if ($resultat) {
     //iterem a traves dels resultats
     while ($row = $resultat->fetch_assoc()) {
@@ -43,7 +51,7 @@ if ($resultat) {
     }
 }
 
-shuffle($preguntes);
+shuffle($preguntes); //Barrejem aleatoriament l'ordre de preguntes de l'array
 
 //https://www.php.net/manual/es/function.array-values.php
 $preguntes = array_values($preguntes);

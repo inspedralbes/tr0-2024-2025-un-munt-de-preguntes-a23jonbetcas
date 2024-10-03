@@ -12,9 +12,6 @@ $preguntes = [];
 https://www.php.net/manual/es/book.mysqli.php
 https://es.stackoverflow.com/questions/436644/como-guardar-todos-los-datos-de-una-consulta-de-mysql-en-un-array-de-php
 https://programacionymas.com/blog/como-funciona-inner-left-right-full-join
-
-Escollim les columnes que volem de la taula, obtenim l'id i text de cada pregunta,
-i els id i text de les respostes associades, amb el LEFT JOIN unim les taules que estan unides per el id de la pregunta
  */
 $consulta = "SELECT p.id AS pregunta_id, p.pregunta, p.imatge, r.id AS resposta_id, r.resposta
         FROM preguntes p

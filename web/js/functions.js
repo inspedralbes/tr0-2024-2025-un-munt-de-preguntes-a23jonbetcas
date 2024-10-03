@@ -13,43 +13,47 @@ https://www.w3schools.com/jsref/prop_style_display.asp
 
 function iniciarPartida() {
   const portada = document.getElementById("portada");
-  console.log("Partida iniciada");
-  portada.innerHTML += '<br><button id="iniciarPart">Iniciar Partida</button>';
+  portada.innerHTML = `<h2>Benvingut al Quiz</h2><br><button id="iniciarPart">Iniciar Partida</button>`;
 
-  document.getElementById("iniciarPart").addEventListener("click", function () {
-    let htmlString = '';
-    htmlString += `<h3>Nom del jugador: </h3><input id="nom" type="text"/>`;
-    htmlString += `<h3>Numero de preguntes: </h3><input id="preg" type="number"/>`;
-    htmlString += `<br><button id="botoJugador">Iniciar partida</button>`;
+  document.getElementById("iniciarPart").addEventListener("click", mostrarFormulari);
+}
 
-    portada.innerHTML += htmlString;
+function mostrarFormulari() {
+  const portada = document.getElementById("portada");
 
-    document.getElementById("botoJugador").addEventListener("click", function () {
+  //Inicialitzem una cadena buida per a mostrar el formulari
+  let htmlString = "";
+  htmlString += `<h3>Nom del jugador: </h3><input id="nom"/>`;
+  htmlString += `<h3>Numero de preguntes: </h3><input id="preg"/>`;
+  htmlString += `<br><button id="botoJugador">Iniciar partida</button>`;
 
-      const nom = document.getElementById("nom").value;
-      const preg = document.getElementById("preg").value;
+  //actualitzem el contingut del formulari
+  portada.innerHTML = htmlString;
+  document.getElementById("botoJugador").addEventListener("click", function () {
+    const nom = document.getElementById("nom").value;
+    const preg = document.getElementById("preg").value;
 
-      introduirDades();
-      
-    });
+    if (nom == "" || preg == "") {
+      alert("Tots els camps son obligatoris");
+    } else {
+      introduirDades(nom, preg);
+    }
   });
 }
 
-function introduirDades(){
-  if (nom && preg && preg > 0) {
-    localStorage.setItem("nom", nom);
-    localStorage.setItem("preg", preg);
-    preguntesSeleccionades = parseInt(preg);
+function introduirDades(nom, preg) {
 
+  //Guardem el nom del jugador i les preguntes en el localstorage
+  localStorage.setItem("nom", nom);
+  localStorage.setItem("preg", preg);
+  preguntesSeleccionades = preg;
 
-    document.getElementById("portada").style.display = "none";
-    carregarPreguntes(preg);
-    document.getElementById("estatPartida").style.display = "block";
-    document.getElementById("partida").style.display = "block";
-  } else {
-    alert("Torna a escriure les dades");
-  }
+  document.getElementById("portada").style.display = "none";
+  carregarPreguntes(preg);
+  document.getElementById("estatPartida").style.display = "block";
+  document.getElementById("partida").style.display = "block";
 }
+
 //Carreguem les preguntes
 function carregarPreguntes(count) {
   fetch(`../back/getPreguntesBBDD.php`, {
@@ -98,8 +102,8 @@ function comptadorTemps() {
 function actualizarMarcador() {
   const estat = document.getElementById("estatPartida");
   //mostrem el temps restant i la pregunta actual en el marcador
-  estat.innerHTML = `<h3>Temps restant: ${tempsRestant}s <br> Pregunta: ${preguntaActual + 1
-    }/${preguntesSeleccionades}</h3>`;
+  estat.innerHTML = `<h3>Temps restant: ${tempsRestant}s <br> 
+  Pregunta: ${preguntaActual + 1}/${preguntesSeleccionades}</h3>`;
 }
 function mostrarPreguntes() {
   const punt = document.getElementById("partida");
@@ -107,7 +111,7 @@ function mostrarPreguntes() {
   //si encara no hem arribat al limit de preguntes
   if (preguntaActual < preguntesSeleccionades) {
     const pregunta = data[preguntaActual]; //obtenim la pregunta actual del array
-    let htmlString = `<div class="pregunta-container"><h2>${pregunta.pregunta}</h2>`;
+    let htmlString = `<div"><h2>${pregunta.pregunta}</h2>`;
     if (pregunta.imatge) {
       htmlString += `<img src="${pregunta.imatge}" width="200" height="200"/>`;
     }
@@ -138,8 +142,8 @@ function botonsRespostes(e) {
 function guardarRespostes(iPreg, iRes) {
   //Guardem la resposta del usuari
   estatDeLaPartida[preguntaActual] = {
-    pregunta: parseInt(iPreg), //guardem l'id de la pregunta
-    resposta: parseInt(iRes), //guardem l'id de la resposta seleccionada
+    pregunta: iPreg, //guardem l'id de la pregunta
+    resposta: iRes, //guardem l'id de la resposta seleccionada
   };
 
   //Si encara hi ha més preguntes
@@ -155,8 +159,7 @@ function guardarRespostes(iPreg, iRes) {
   }
 }
 function enviarRespostes() {
-  console.log("Respuestas enviadas:",
-    JSON.stringify(estatDeLaPartida)); //Verifiquem les dades que s'envien
+  console.log("Respuestas enviadas:", JSON.stringify(estatDeLaPartida)); //Verifiquem les dades que s'envien
   fetch(`../back/finalitzaBBDD.php`, {
     method: "POST",
     body: JSON.stringify(estatDeLaPartida),
@@ -174,30 +177,34 @@ function enviarRespostes() {
 }
 
 function mostrarResultat(info) {
-  let htmlString = '';
+
+  //inicialitzem una cadena buida
+  let htmlString = "";
   const punt = document.getElementById("resultat");
-  
-  htmlString += `<h2>Respostes Correctes: ${info.correcte}</h2><h2>Total Respostes: ${info.totalResp}</h2>`;
+
+  //Agreguem al HTML el numero de respostes correctes i total de respostes
+  htmlString += `<h2>Respostes Correctes: ${info.correcte}</h2>`;
+  htmlString += `<h2>Total Respostes: ${info.totalResp}</h2>`;
+
   document.getElementById("partida").style.display = "none";
   document.getElementById("estatPartida").style.display = "none";
 
-  htmlString += `<button id="ini">Tornar a l'inici</button>`;  
-  punt.innerHTML += htmlString;
+  //Afegim el boto de tornar a l'inici que permet reiniciar el quiz
+  htmlString += `<button id="ini">Tornar a l'inici</button>`;
+  punt.innerHTML += htmlString; //insertem el contingut HTML generat en el div
 
-  document.getElementById("ini").addEventListener("click", function (e) {
-    data = []; //guardar preguntes i respostes que obtenim del server
-    preguntaActual = 0; //establim un index per a la pregunta actual
-    estatDeLaPartida = []; //guardar les respostes del usuari
+  document.getElementById("ini").addEventListener("click", function () {
+    console.log("Inici de la partida");
+    //Reiniciem totes les variables per a tornar a jugar
+    data = [];
+    preguntaActual = 0;
+    tempsRestant = 30;
+    estatDeLaPartida = [];
     preguntesSeleccionades = 0;
+    document.getElementById("resultat").innerHTML = ""; //netejem el resultat anterior 
+    document.getElementById("portada").style.display = "block"; //mostrem la portada de nou
     iniciarPartida();
   });
-  
-  const botoRespostes = document.querySelectorAll(".botoResposta");
-  botoRespostes.forEach((boto) => {
-    boto.disabled = true; //Deshabilitar cada botó de resposta
-    
-  });
-  punt.innerHTML += htmlString;
 }
 
 iniciarPartida();
