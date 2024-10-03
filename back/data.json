@@ -64,7 +64,7 @@
 				{ "id": 3, "resposta": "Musaranya pigmeu", "correcta": true },
 				{ "id": 4, "resposta": "Ratolí", "correcta": false }
 			],
-			"imatge": "https://images.unsplash.com/photo-1556191556-60f963e9c014"
+			"imatge": "https://concepto.de/wp-content/uploads/2019/03/mamiferos-portada.jpg"
 		},
 		{
 			"id": 7,
@@ -75,7 +75,7 @@
 				{ "id": 3, "resposta": "Sòfoc", "correcta": false },
 				{ "id": 4, "resposta": "Morcego", "correcta": true }
 			],
-			"imatge": "https://images.unsplash.com/photo-1574158622682-6e8ed84ac64e"
+			"imatge": "https://www.lavanguardia.com/files/image_990_484/files/fp/uploads/2022/08/29/630cdab429d94.r_d.517-503-9812.jpeg"
 		},
 		{
 			"id": 8,
@@ -86,7 +86,7 @@
 				{ "id": 3, "resposta": "Terra", "correcta": true },
 				{ "id": 4, "resposta": "Mart", "correcta": false }
 			],
-			"imatge": "https://images.unsplash.com/photo-1566079739262-4cf6a8f4e1e8"
+			"imatge": "https://static-blogs.hoy.es/wp-content/uploads/sites/227/2020/10/Planetas-del-Sistema-Solar.jpg"
 		},
 		{
 			"id": 9,
@@ -97,7 +97,7 @@
 				{ "id": 3, "resposta": "Madrid", "correcta": false },
 				{ "id": 4, "resposta": "París", "correcta": true }
 			],
-			"imatge": "https://images.unsplash.com/photo-1589505003037-50835c18a1f4"
+			"imatge": "https://humanidades.com/wp-content/uploads/2018/09/francia-3-e1580002068755.jpg"
 		},
 		{
 			"id": 10,
@@ -108,7 +108,7 @@
 				{ "id": 3, "resposta": "Elefant africà", "correcta": false },
 				{ "id": 4, "resposta": "Balena blava", "correcta": true }
 			],
-			"imatge": "https://images.unsplash.com/photo-1544005313-1c14h3g8j8a8"
+			"imatge": "https://media.istockphoto.com/id/935702298/es/vector/colecci%C3%B3n-de-lindos-animales-granja-de-animales-animales-salvajes-animales-de-marina-aislados.jpg?s=1024x1024&w=is&k=20&c=k4y5BrUmlgceo2KY_jZ2TrqDphY-22v9c03y0BfHpJ0="
 		},
 		{
 			"id": 11,
@@ -119,7 +119,7 @@
 				{ "id": 3, "resposta": "Saturn", "correcta": false },
 				{ "id": 4, "resposta": "Mart", "correcta": true }
 			],
-			"imatge": "https://images.unsplash.com/photo-1593990162387-b9d8e6a10462"
+			"imatge": "https://services.meteored.com/img/article/que-es-un-planeta-asi-son-los-planetas-de-nuestro-sistema-solar-1715857644475_1024.jpg"
 		},
 		{
 			"id": 12,
@@ -130,7 +130,7 @@
 				{ "id": 3, "resposta": "Ferro", "correcta": true },
 				{ "id": 4, "resposta": "Plom", "correcta": false }
 			],
-			"imatge": "https://images.unsplash.com/photo-1526481280694-3e1342f17a7e"
+			"imatge": "https://initube.es/wp-content/uploads/2023/01/Origen-de-los-metales-1-1024x768.jpeg"
 		},
 		{
 			"id": 13,
@@ -141,7 +141,7 @@
 				{ "id": 3, "resposta": "Rússia", "correcta": true },
 				{ "id": 4, "resposta": "Canadà", "correcta": false }
 			],
-			"imatge": "https://images.unsplash.com/photo-1533051616824-769fd165f9b7"
+			"imatge": "https://cdn.businessinsider.es/sites/navi.axelspringer.es/public/media/image/2023/09/banderas-varios-paises-3132308.jpg?tf=1200x"
 		},
 		{
 			"id": 14,
@@ -152,7 +152,7 @@
 				{ "id": 3, "resposta": "Anglès", "correcta": false },
 				{ "id": 4, "resposta": "Àrab", "correcta": false }
 			],
-			"imatge": "https://images.unsplash.com/photo-1501232701533-76ef60cdabef"
+			"imatge": "https://i0.wp.com/www.9h05.com/wp-content/uploads/2016/06/idiomasMundo.png?w=768&ssl=1"
 		},
 		{
 			"id": 15,
@@ -163,7 +163,7 @@
 				{ "id": 3, "resposta": "O2", "correcta": false },
 				{ "id": 4, "resposta": "H2", "correcta": false }
 			],
-			"imatge": "https://images.unsplash.com/photo-1555940492-c38f6c7c9f32"
+			"imatge": "https://www.fundacionaquae.org/wp-content/uploads/2020/02/propiedades-agua.jpg"
 		},
 		{
 			"id": 16,
@@ -174,7 +174,7 @@
 				{ "id": 3, "resposta": "Harry Potter", "correcta": false },
 				{ "id": 4, "resposta": "Don Quixot", "correcta": false }
 			],
-			"imatge": "https://images.unsplash.com/photo-1586644219717-e61f54ef2b85"
+			"imatge": "https://climatica.coop/wp-content/uploads/2024/01/1280px-Books_HD_8314929977-900x600.jpg);?w=390&q=90"
 		},
 		{
 			"id": 17,
@@ -185,7 +185,7 @@
 				{ "id": 3, "resposta": "Zinc", "correcta": false },
 				{ "id": 4, "resposta": "Mercuri", "correcta": false }
 			],
-			"imatge": "https://images.unsplash.com/photo-1576233221662-9bc85cf58c68"
+			"imatge": "https://hierrosmoraanton.com/wp-content/uploads/2023/02/PORTADA.jpg"
 		},
 		{
 			"id": 18,
@@ -196,7 +196,7 @@
 				{ "id": 3, "resposta": "Nàpols", "correcta": false },
 				{ "id": 4, "resposta": "Torí", "correcta": false }
 			],
-			"imatge": "https://images.unsplash.com/photo-1542082064-fb8d19b7163a"
+			"imatge": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLnZ8h4RwqL2AxX-c9x7TO8EkzzEZAEb_6cA&s"
 		},
 		{
 			"id": 19,
@@ -207,7 +207,7 @@
 				{ "id": 3, "resposta": "Emú", "correcta": false },
 				{ "id": 4, "resposta": "Dingo", "correcta": false }
 			],
-			"imatge": "https://images.unsplash.com/photo-1555685814-3070b99db11d"
+			"imatge": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/1200px-Flag_of_Australia_%28converted%29.svg.png"
 		},
 		{
 			"id": 20,
@@ -218,7 +218,7 @@
 				{ "id": 3, "resposta": "Portuguès", "correcta": true },
 				{ "id": 4, "resposta": "Francès", "correcta": false }
 			],
-			"imatge": "https://images.unsplash.com/photo-1576360698447-8ae149d7f6ec"
+			"imatge": "hhttps://www.expreso.info/files/2022-12/Rio_de_Janeiro.jpg"
 		},
 		{
 			"id": 21,
@@ -229,7 +229,7 @@
 				{ "id": 3, "resposta": "Alumini", "correcta": false },
 				{ "id": 4, "resposta": "Coure", "correcta": false }
 			],
-			"imatge": "https://images.unsplash.com/photo-1575541571752-74de1b66c611"
+			"imatge": "https://c.files.bbci.co.uk/17544/production/_116765559_gettyimages-468068368.jpg"
 		},
 		{
 			"id": 22,
@@ -240,7 +240,7 @@
 				{ "id": 3, "resposta": "Mèxic DF", "correcta": false },
 				{ "id": 4, "resposta": "Bombai", "correcta": false }
 			],
-			"imatge": "https://images.unsplash.com/photo-1530911040771-8c4d83c92d66"
+			"imatge": "https://images.ctfassets.net/txbhe1wabmyx/1dcXeAwolNAngGDuglWeWi/af1087111417148113c2d7fb477d5fda/photo-1477959858617-67f85cf4f1df.jpg"
 		},
 		{
 			"id": 23,
@@ -251,7 +251,7 @@
 				{ "id": 3, "resposta": "Dòlar", "correcta": true },
 				{ "id": 4, "resposta": "Pound", "correcta": false }
 			],
-			"imatge": "https://images.unsplash.com/photo-1611549668737-2eb68eb31cd0"
+			"imatge": "https://blog.selfbank.es/wp-content/uploads/2016/10/iStock_67525359_SMALL.jpg"
 		},
 		{
 			"id": 24,
@@ -273,7 +273,7 @@
 				{ "id": 3, "resposta": "Anglès", "correcta": false },
 				{ "id": 4, "resposta": "Italian", "correcta": false }
 			],
-			"imatge": "https://images.unsplash.com/photo-1586190804361-b1f0663c2bb2"
+			"imatge": "https://ecolec.es/greenblog/wp-content/uploads/2023/12/hermosa-vista-montanas-valle-verde.jpg"
 		},
 		{
 			"id": 26,
@@ -284,7 +284,7 @@
 				{ "id": 3, "resposta": "Patres", "correcta": false },
 				{ "id": 4, "resposta": "Heraklion", "correcta": false }
 			],
-			"imatge": "https://images.unsplash.com/photo-1600565611703-e953cb57f391"
+			"imatge": "https://cms.w2m.com/dam/Sites/Flowo/imagenes-blog/grecia-en-una-semana/que-ver-grecia-en-una-semana-Mykonos-4.webp"
 		},
 		{
 			"id": 27,
@@ -295,7 +295,7 @@
 				{ "id": 3, "resposta": "Terra", "correcta": false },
 				{ "id": 4, "resposta": "Marte", "correcta": false }
 			],
-			"imatge": "https://images.unsplash.com/photo-1571769110931-6c3d373f78f6"
+			"imatge": "https://content.nationalgeographic.com.es/medio/2022/07/31/el-planeta-mercurio_c7bafef8_1280x720.jpg"
 		},
 		{
 			"id": 28,
@@ -306,7 +306,7 @@
 				{ "id": 3, "resposta": "Malmö", "correcta": false },
 				{ "id": 4, "resposta": "Uppsala", "correcta": false }
 			],
-			"imatge": "https://images.unsplash.com/photo-1561399482-2ef2f63f43c0"
+			"imatge": "https://www.travel-xperience.com/sites/default/files/suecia_accesible_silla_de_ruedas.jpg"
 		},
 		{
 			"id": 29,
@@ -317,7 +317,7 @@
 				{ "id": 3, "resposta": "Piràmide de Menkaure", "correcta": false },
 				{ "id": 4, "resposta": "Piràmide de Sòcrates", "correcta": false }
 			],
-			"imatge": "https://images.unsplash.com/photo-1569061827134-51002e28e1b8"
+			"imatge": "https://upload.wikimedia.org/wikipedia/commons/1/18/All_Gizah_Pyramids-2.jpg"
 		},
 		{
 			"id": 30,
@@ -328,7 +328,7 @@
 				{ "id": 3, "resposta": "Lliura esterlina", "correcta": true },
 				{ "id": 4, "resposta": "Franco", "correcta": false }
 			],
-			"imatge": "https://images.unsplash.com/photo-1562209588-d8c2e5029e61"
+			"imatge": "https://www.focus-info.org/wp-content/uploads/2022/07/london-blog-1.jpg"
 		}
 	]
 }

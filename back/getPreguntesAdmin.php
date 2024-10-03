@@ -5,6 +5,9 @@ header('Content-Type: application/json');
 include 'connexio.php';
 $preguntes = [];
 
+//$respostesRebudes = json_decode(file_get_contents('php://input'), true); 
+
+
 /*
 https://www.php.net/manual/es/book.mysqli.php
 https://es.stackoverflow.com/questions/436644/como-guardar-todos-los-datos-de-una-consulta-de-mysql-en-un-array-de-php
@@ -42,8 +45,6 @@ if ($resultat) {
         }
     }
 }
-
-shuffle($preguntes);
 
 //https://www.php.net/manual/es/function.array-values.php
 $preguntes = array_values($preguntes);

@@ -2,9 +2,9 @@ preguntaActual = 0;
 let data = []; //guardar preguntes i respostes que obtenim del server
 
 function carregarPreguntes() {
-  fetch(`../back/getPreguntesBBDD.php`, {
+  fetch(`../back/getPreguntesAdmin.php`, {
     method: "POST",
-    body: JSON.stringify({ count: 40 }),
+    body: JSON.stringify({}),
     headers: {
       "Content-Type": "application/json",
     },
@@ -18,6 +18,7 @@ function carregarPreguntes() {
     .then((info) => {
       console.log(info);
       data = info; //guardem les preguntes i respostes
+      localStorage.setItem('preguntes',JSON.stringify(data));
       mostrarPreguntes();
     })
     .catch((error) => {
@@ -129,7 +130,6 @@ function editarPreguntes(id) {
   const idBuscat = parseInt(id, 10); //convertim l'id de string a number
 
   console.log("ID Buscat:", idBuscat);
-
   //configurem el click per al boto editar
     document.getElementById("edit").onclick = function () {
       //creem l'objecte que volem editar(pregunta)
@@ -188,6 +188,4 @@ function eliminarPreguntes(id) {
       console.error("Error al eliminar la pregunta:", error);
     });
 }
-
-
 carregarPreguntes();
