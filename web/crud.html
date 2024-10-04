@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>CRUD Preguntas</title>
+</head>
+
+<body>
+  <h1>CRUD</h1>
+  <a href="index.html">Tornar a la portada</a>
+  <hr />
+  <br />
+  <div>
+    <form id="insertar" style="display: none">
+      <input type="text" name="Pregunta" placeholder="Pregunta" required />
+      <input type="text" name="Imatge" placeholder="Imatge" />
+      <input type="text" name="Resposta 1" placeholder="Resposta" required />
+      <input type="text" name="Resposta 2" placeholder="Resposta" required />
+      <input type="text" name="Resposta 3" placeholder="Resposta" required />
+      <input type="text" name="Resposta 4" placeholder="Resposta" required />
+      <select name="Correcta" required>
+        <option value="">Selecciona la resposta correcta</option>
+        <option value="1">Respuesta 1</option>
+        <option value="2">Respuesta 2</option>
+        <option value="3">Respuesta 3</option>
+        <option value="4">Respuesta 4</option>
+      </select>
+      <button type="submit">Enviar</button>
+    </form>
+    </div>
+    <div>
+    <div id="formEditar" style="display: none">
+    <input type="text" id="pregunta" name="pregunta" placeholder="Pregunta" required />
+    <input type="text" id="Imatge" name="Imatge" placeholder="Imatge" />
+    <input type="text" id="rta1" name="Resposta 1" placeholder="Respuesta 1" required />
+    <input type="text" id="rta2" name="Resposta 2" placeholder="Respuesta 2" required />
+    <input type="text" id="rta3" name="Resposta 3" placeholder="Respuesta 3" required />
+    <input type="text" id="rta4" name="Resposta 4" placeholder="Respuesta 4" required />
+    <select id="correcte" name="Correcta" required>
+      <option value="">Selecciona la resposta correcta</option>
+      <option value="1">Resposta 1</option>
+      <option value="2">Resposta 2</option>
+      <option value="3">Resposta 3</option>
+      <option value="4">Resposta 4</option>
+    </select>
+    <!-- <input type="hidden" name="id" id="preguntaId" /> -->
+    <button id="edit" >Actualitzar Pregunta</button>
+    <a href="crud.html">Tornar al crud</a>
+  </div>
+  </div>
+
+  <div id="crud">
+    <h2>Lista de Preguntas</h2>
+  </div>
+  <script src="./js/crud.js"></script>
+</body>
+
+</html>
