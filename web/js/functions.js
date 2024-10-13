@@ -23,8 +23,8 @@ function mostrarFormulari() {
 
   //Inicialitzem una cadena buida per a mostrar el formulari
   let htmlString = "";
-  htmlString += `<h3>Nom del jugador: </h3><input id="nom"/>`;
-  htmlString += `<h3>Numero de preguntes: </h3><input id="preg"/>`;
+  htmlString += `<h3>Nom del jugador: </h3><input id="nom" type="text"required/>`;
+  htmlString += `<h3>Numero de preguntes: </h3><input id="preg" type="number"required/>`;
   htmlString += `<br><button id="botoJugador">Iniciar partida</button>`;
 
   //actualitzem el contingut del formulari
@@ -33,14 +33,21 @@ function mostrarFormulari() {
     const nom = document.getElementById("nom").value;
     const preg = document.getElementById("preg").value;
 
-    if (nom == "" || preg == "") {
-      alert("Tots els camps son obligatoris");
-    } else {
+    const nomRegex = /^[A-Za-zÀ-ÿ\s]+$/;
+    const pregRegex = /^\d+$/;
+
+    if (nomRegex.test(nom) && pregRegex.test(preg)) {
       introduirDades(nom, preg);
+    } else {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Has introduit caràcters invàlids!",
+      });
     }
+
   });
 }
-
 function introduirDades(nom, preg) {
 
   //Guardem el nom del jugador i les preguntes en el localstorage
@@ -82,7 +89,7 @@ function carregarPreguntes(count) {
 }
 
 function iniciarTemporitzador() {
-  tempsRestant = 30;
+  tempsRestant = 5;
   temporitzador = setInterval(comptadorTemps, 1000); //cada segon, executem la funcio comptadorTemps
 }
 
@@ -94,7 +101,20 @@ function comptadorTemps() {
     actualizarMarcador(); //actualitzacio del marcador
   } else {
     clearInterval(temporitzador); //aturar el comptador
-    alert("Temps esgotat"); //avis de que el temps ha acabat
+    Swal.fire({
+      title: "Temps esgotat!",
+      width: 600,
+      padding: "3em",
+      color: "#716add",
+      background: "#fff url(/images/trees.png)",
+      backdrop: `
+        rgba(0,0,123,0.4)
+        url("/images/nyan-cat.gif")
+        left top
+        no-repeat
+      `,
+      html: '<img src="https://www.educaciontrespuntocero.com/wp-content/uploads/2019/06/homer.gif" style="width: 100%; max-width: 300px;" />',
+    });    
     enviarRespostes(); //enviar les respostes al servidor
   }
 }
@@ -159,7 +179,8 @@ function guardarRespostes(iPreg, iRes) {
   }
 }
 function enviarRespostes() {
-  console.log("Respuestas enviadas:", JSON.stringify(estatDeLaPartida)); //Verifiquem les dades que s'envien
+  console.log("Respostes enviades:", JSON.stringify(estatDeLaPartida)); //Verifiquem les dades que s'envien
+
   fetch(`../back/finalitzaBBDD.php`, {
     method: "POST",
     body: JSON.stringify(estatDeLaPartida),
@@ -188,6 +209,7 @@ function mostrarResultat(info) {
 
   document.getElementById("partida").style.display = "none";
   document.getElementById("estatPartida").style.display = "none";
+  document.getElementById("resultat").style.display = "block";
 
   //Afegim el boto de tornar a l'inici que permet reiniciar el quiz
   htmlString += `<button id="ini">Tornar a l'inici</button>`;
@@ -208,3 +230,4 @@ function mostrarResultat(info) {
 }
 
 iniciarPartida();
+

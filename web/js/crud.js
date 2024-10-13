@@ -127,7 +127,7 @@ function editarPreguntes(id) {
   document.getElementById("crud").style.display = "none";
   document.getElementById("formEditar").style.display = "block";
 
-  const idBuscat = parseInt(id, 10); //convertim l'id de string a number
+  const idBuscat = parseInt(id, 10);
 
   console.log("ID Buscat:", idBuscat);
   //configurem el click per al boto editar

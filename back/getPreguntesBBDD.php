@@ -15,7 +15,7 @@ Assignem el ID de la pregunta a pregunta_id, llavors seleccionem la pregunta, im
 llavors seleccionem la resposta. Amb el left join podem unir les taules preguntes i respostes,
 aixo vol dir que es seleccionen tots els elements de la taula preguntes i registres que estiguin units per l'id de la taula respostes.
 el p.id = r.pregunta_id especifica la condicio de la unio, on la id de la pregunta a la taula preguntes ha de coincidir amb el pregunta_id a respostes
-*/
+Aixi t'estalvies d'haver de fer dos selects per a les preguntes i les respostes*/
 
 $consulta = "SELECT p.id AS pregunta_id, p.pregunta, p.imatge, r.id AS resposta_id, r.resposta
         FROM preguntes p
